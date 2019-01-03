@@ -14,7 +14,7 @@ import static android.hardware.Camera.Parameters.FLASH_MODE_TORCH;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/04/27
  *     desc  : utils about flashlight

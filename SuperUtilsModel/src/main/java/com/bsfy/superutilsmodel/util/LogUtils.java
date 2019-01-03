@@ -59,7 +59,7 @@ import javax.xml.transform.stream.StreamSource;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/21
  *     desc  : utils about log

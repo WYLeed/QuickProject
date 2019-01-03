@@ -1,1 +1,1 @@
-include ':app', ':SuperUtilsModel', ':SuperWeightModel'
+include ':app', ':SuperUtilsModel', ':SuperWeightModel', ':SuperHttpModel'

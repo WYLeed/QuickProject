@@ -2,7 +2,7 @@ package com.bsfy.superutilsmodel.constant;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/03/13
  *     desc  : constants of regex

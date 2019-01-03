@@ -12,8 +12,8 @@ import kotlinx.android.synthetic.main.activity_back.*
 
 /**
  * ```
- * author: blankj
- * blog  : http://blankj.com
+ * author: BSFY
+ * blog  : http://BSFY.com
  * time  : 2018/11/16
  * desc  : base about back activity
  * ```

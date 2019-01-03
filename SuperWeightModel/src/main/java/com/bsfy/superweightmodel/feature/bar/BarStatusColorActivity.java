@@ -20,7 +20,7 @@ import java.util.Random;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/05/27
  *     desc  : demo about BarUtils

@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/12/29
  *     desc  : constants of permission

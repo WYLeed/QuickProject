@@ -17,7 +17,7 @@ import java.lang.reflect.Field;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/08/02
  *     desc  : utils about keyboard
@@ -275,7 +275,7 @@ public final class KeyboardUtils {
     }
 
     /**
-     * Click blankj area to hide soft input.
+     * Click BSFY area to hide soft input.
      * <p>Copy the following code in ur activity.</p>
      */
     public static void clickBlankArea2HideSoftInput() {

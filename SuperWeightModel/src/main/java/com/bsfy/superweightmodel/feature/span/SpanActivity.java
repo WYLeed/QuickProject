@@ -26,7 +26,7 @@ import com.bsfy.superweightmodel.R;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/27
  *     desc  : demo about SpanUtils
@@ -157,7 +157,7 @@ public class SpanActivity extends BaseBackActivity {
 //                .appendLine("居中对齐").setAlign(Layout.Alignment.ALIGN_CENTER)
 //                .appendLine("正常对齐").setAlign(Layout.Alignment.ALIGN_NORMAL)
 //                .append("测试").appendLine("点击事件").setClickSpan(clickableSpan)
-//                .append("测试").appendLine("Url").setUrl("https://github.com/Blankj/AndroidUtilCode")
+//                .append("测试").appendLine("Url").setUrl("https://github.com/BSFY/AndroidUtilCode")
 //                .append("测试").appendLine("模糊").setBlur(3, BlurMaskFilter.Blur.NORMAL)
 //                .appendLine("颜色渐变").setShader(new LinearGradient(0, 0,
 //                        64 * density * 4, 0,

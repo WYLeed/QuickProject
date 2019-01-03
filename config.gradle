@@ -64,7 +64,7 @@ ext {
 
             gson                            : "com.google.code.gson:gson:2.8.2",
             glide                           : "com.github.bumptech.glide:glide:4.7.1",
-            retrofit                        : "com.squareup.retrofit2:retrofit:2.4.0",
+
 
             javassist                       : "org.javassist:javassist:3.24.0-GA",      //Java动态编程之javassist
             commons_io                      : "commons-io:commons-io:2.5",              //FileUtils
@@ -76,7 +76,16 @@ ext {
             base_recyclerview_adapter_helper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42",     //recycleView
             //下拉刷新
             smart_refresh_layout            : "com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-18",
-            smart_refresh_header            : "com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-18"     //没有使用特殊Header，可以不加这行
+            smart_refresh_header            : "com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-18",     //没有使用特殊Header，可以不加这行
+
+
+            logging_interceptor             : "com.squareup.okhttp3:logging-interceptor:3.10.0",
+            okhttp                          : "com.squareup.okhttp3:okhttp:3.11.0",
+            disklrucache                    : "com.jakewharton:disklrucache:2.0.2",
+            rxjava                          : "io.reactivex.rxjava2:rxjava:2.2.0",
+            rxandroid                       : "io.reactivex.rxjava2:rxandroid:2.1.0",
+            adapter_rxjava                  : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+            retrofit                        : "com.squareup.retrofit2:retrofit:2.4.0",
 
     ]
 }

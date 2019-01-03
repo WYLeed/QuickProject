@@ -2,7 +2,7 @@ package com.bsfy.superutilsmodel.subutils;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/08/25
  *     desc  : utils about retrofit

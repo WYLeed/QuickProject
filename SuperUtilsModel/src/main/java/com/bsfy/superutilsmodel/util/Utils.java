@@ -51,7 +51,7 @@ public final class Utils {
     private static final ActivityLifecycleImpl ACTIVITY_LIFECYCLE = new ActivityLifecycleImpl();
 
     private static final String PERMISSION_ACTIVITY_CLASS_NAME =
-            "com.blankj.utilcode.util.PermissionUtils$PermissionActivity";
+            "com.BSFY.utilcode.util.PermissionUtils$PermissionActivity";
 
 
     private Utils() {

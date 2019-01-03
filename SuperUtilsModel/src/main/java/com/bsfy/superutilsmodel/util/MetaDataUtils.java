@@ -12,7 +12,7 @@ import android.support.annotation.NonNull;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/05/15
  *     desc  : utils about meta-data

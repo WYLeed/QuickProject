@@ -1,4 +1,4 @@
-package com.blankj.utilcode.pkg.feature.vibrate
+package com.BSFY.utilcode.pkg.feature.vibrate
 
 import android.content.Context
 import android.content.Intent
@@ -11,8 +11,8 @@ import kotlinx.android.synthetic.main.activity_vibrate.*
 
 /**
  * ```
- * author: Blankj
- * blog  : http://blankj.com
+ * author: BSFY
+ * blog  : http://BSFY.com
  * time  : 2018/12/29
  * desc  : demo about VibrateUtils
  * ```

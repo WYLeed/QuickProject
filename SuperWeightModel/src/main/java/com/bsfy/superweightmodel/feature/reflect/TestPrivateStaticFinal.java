@@ -2,7 +2,7 @@ package com.bsfy.superweightmodel.feature.reflect;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/01/12
  *     desc  : demo about ReflectUtils

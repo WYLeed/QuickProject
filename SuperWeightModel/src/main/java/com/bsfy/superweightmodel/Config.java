@@ -9,7 +9,7 @@ import java.io.File;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/05/10
  *     desc  : config about constants
@@ -19,10 +19,10 @@ public class Config {
 
     public static final String FILE_SEP = System.getProperty("file.separator");
     public static final String LINE_SEP = System.getProperty("line.separator");
-    public static final String PKG      = "com.blankj.androidutilcode";
-    public static final String TEST_PKG = "com.blankj.testinstall";
-    public static final String GITHUB   = "https://github.com/Blankj/AndroidUtilCode";
-    public static final String BLOG     = "https://blankj.com";
+    public static final String PKG      = "com.BSFY.androidutilcode";
+    public static final String TEST_PKG = "com.BSFY.testinstall";
+    public static final String GITHUB   = "https://github.com/BSFY/AndroidUtilCode";
+    public static final String BLOG     = "https://BSFY.com";
     public static final String CACHE_PATH;
     public static final String TEST_APK_PATH;
 

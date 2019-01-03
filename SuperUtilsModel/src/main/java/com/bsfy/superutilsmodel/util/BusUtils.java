@@ -10,11 +10,11 @@ import java.lang.annotation.Target;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/10/02
  *     desc  : utils about bus, and the site of
- *     https://github.com/Blankj/AndroidUtilCode/blob/master/utilcode/README-STATIC-BUS.md
+ *     https://github.com/BSFY/AndroidUtilCode/blob/master/utilcode/README-STATIC-BUS.md
  *     will help u.
  * </pre>
  */

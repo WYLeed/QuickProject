@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/10/09
  *     desc  : utils about close

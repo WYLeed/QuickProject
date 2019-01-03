@@ -22,7 +22,7 @@ import java.util.List;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/01/17
  *     desc  : utils about fragment

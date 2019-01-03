@@ -6,7 +6,7 @@ import android.text.style.UpdateAppearance;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/27
  *     desc  : demo about SpanUtils

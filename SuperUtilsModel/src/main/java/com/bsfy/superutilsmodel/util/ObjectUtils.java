@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/12/24
  *     desc  : utils about object

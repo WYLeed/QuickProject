@@ -11,8 +11,8 @@ import com.squareup.leakcanary.LeakCanary
 
 /**
  * ```
- * author: blankj
- * blog  : http://blankj.com
+ * author: BSFY
+ * blog  : http://BSFY.com
  * time  : 2018/11/16
  * desc  : base about application
  * ```

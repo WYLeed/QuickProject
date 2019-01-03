@@ -20,7 +20,7 @@ import java.lang.ref.WeakReference;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/10/16
  *     desc  : utils about snackbar

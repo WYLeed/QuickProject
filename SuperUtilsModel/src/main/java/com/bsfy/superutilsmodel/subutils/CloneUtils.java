@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/01/30
  *     desc  : utils about clone

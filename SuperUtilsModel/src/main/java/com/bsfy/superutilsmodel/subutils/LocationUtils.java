@@ -25,7 +25,7 @@ import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 16/11/13
  *     desc  : 定位相关工具类

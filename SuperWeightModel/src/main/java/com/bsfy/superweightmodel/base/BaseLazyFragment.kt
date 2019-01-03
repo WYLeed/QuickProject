@@ -4,8 +4,8 @@ import android.util.Log
 
 /**
  * ```
- * author: blankj
- * blog  : http://blankj.com
+ * author: BSFY
+ * blog  : http://BSFY.com
  * time  : 2018/03/23
  * desc  : base about lazy fragment
  * ```

@@ -2,7 +2,7 @@ package com.bsfy.superutilsmodel.subutils;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/19
  *     desc  : 相机相关工具类

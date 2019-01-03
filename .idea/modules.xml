@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SuperHttpModel/SuperHttpModel.iml" filepath="$PROJECT_DIR$/SuperHttpModel/SuperHttpModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SuperUtilsModel/SuperUtilsModel.iml" filepath="$PROJECT_DIR$/SuperUtilsModel/SuperUtilsModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SuperWeightModel/SuperWeightModel.iml" filepath="$PROJECT_DIR$/SuperWeightModel/SuperWeightModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />

@@ -8,7 +8,7 @@ import com.bsfy.superutilsmodel.util.Utils;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/10/12
  *     desc  : app about utils

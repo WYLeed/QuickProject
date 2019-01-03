@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/09/18
  *     desc  : demo about ImageUtils

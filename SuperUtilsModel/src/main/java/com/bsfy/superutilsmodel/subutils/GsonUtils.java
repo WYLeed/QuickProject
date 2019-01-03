@@ -9,7 +9,7 @@ import java.lang.reflect.Type;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/04/05
  *     desc  : utils about gson

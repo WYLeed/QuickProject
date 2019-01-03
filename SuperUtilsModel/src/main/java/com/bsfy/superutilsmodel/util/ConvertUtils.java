@@ -23,7 +23,7 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/08/13
  *     desc  : utils about convert

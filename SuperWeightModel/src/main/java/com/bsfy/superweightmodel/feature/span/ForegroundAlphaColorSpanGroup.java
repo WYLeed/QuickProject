@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/27
  *     desc  : demo about SpanUtils

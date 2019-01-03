@@ -16,7 +16,7 @@ import java.util.Random;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 17/02/02
  *     desc  : demo about FragmentUtils

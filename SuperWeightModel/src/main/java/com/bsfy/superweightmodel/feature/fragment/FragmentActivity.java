@@ -18,7 +18,7 @@ import com.bsfy.superweightmodel.R;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 17/02/01
  *     desc  : demo about FragmentUtils

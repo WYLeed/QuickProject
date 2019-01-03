@@ -4,7 +4,7 @@ import android.support.v4.util.SimpleArrayMap;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 16/11/16
  *     desc  : 拼音相关工具类

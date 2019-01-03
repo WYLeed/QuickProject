@@ -19,7 +19,7 @@ import com.bsfy.superweightmodel.helper.DialogHelper;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/29
  *     desc  : demo about ToastUtils

@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/26
  *     desc  : demo about ImageUtils
@@ -74,7 +74,7 @@ public class ImageActivity extends BaseActivity {
         mList.add(new ImageBean(R.string.image_add_corner_border, ImageUtils.addCornerBorder(src, 16, Color.GREEN, 0)));
         mList.add(new ImageBean(R.string.image_add_circle_border, ImageUtils.addCircleBorder(round, 16, Color.GREEN)));
         mList.add(new ImageBean(R.string.image_add_reflection, ImageUtils.addReflection(src, 80)));
-        mList.add(new ImageBean(R.string.image_add_text_watermark, ImageUtils.addTextWatermark(src, "blankj", 40, Color.GREEN, 0, 0)));
+        mList.add(new ImageBean(R.string.image_add_text_watermark, ImageUtils.addTextWatermark(src, "BSFY", 40, Color.GREEN, 0, 0)));
         mList.add(new ImageBean(R.string.image_add_image_watermark, ImageUtils.addImageWatermark(src, watermark, 0, 0, 0x88)));
         mList.add(new ImageBean(R.string.image_to_gray, ImageUtils.toGray(src)));
         mList.add(new ImageBean(R.string.image_fast_blur, ImageUtils.fastBlur(src, 0.1f, 5)));

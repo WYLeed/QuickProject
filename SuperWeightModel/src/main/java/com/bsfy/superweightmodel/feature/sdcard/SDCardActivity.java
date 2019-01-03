@@ -14,7 +14,7 @@ import com.bsfy.superweightmodel.R;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/27
  *     desc  : demo about SDCardUtils

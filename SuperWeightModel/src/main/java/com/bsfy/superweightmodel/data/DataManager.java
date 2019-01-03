@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/01/08
  *     desc  : manager about data

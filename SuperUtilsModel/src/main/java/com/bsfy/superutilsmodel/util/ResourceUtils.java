@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/05/07
  *     desc  : utils about resource

@@ -10,7 +10,7 @@ import java.net.URLEncoder;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/08/07
  *     desc  : utils about encode

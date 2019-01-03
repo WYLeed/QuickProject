@@ -31,7 +31,7 @@ import static android.content.Context.WIFI_SERVICE;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/08/02
  *     desc  : utils about network

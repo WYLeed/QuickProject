@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2018/01/06
  *     desc  : helper about permission

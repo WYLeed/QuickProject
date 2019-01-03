@@ -1,0 +1,17 @@
+apply {
+    from "${rootDir.path}/config_lib.gradle"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':SuperUtilsModel')
+
+    api dep.logging_interceptor
+    api dep.okhttp
+    api dep.disklrucache
+    api dep.rxjava
+    api dep.rxandroid
+    api dep.adapter_rxjava
+    api dep.retrofit
+
+}

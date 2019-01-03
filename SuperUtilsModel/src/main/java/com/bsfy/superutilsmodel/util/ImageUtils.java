@@ -48,7 +48,7 @@ import java.io.OutputStream;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/08/12
  *     desc  : utils about image

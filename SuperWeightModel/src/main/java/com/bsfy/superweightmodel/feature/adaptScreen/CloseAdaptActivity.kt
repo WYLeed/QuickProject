@@ -1,4 +1,4 @@
-package com.blankj.utilcode.pkg.feature.adaptScreen
+package com.BSFY.utilcode.pkg.feature.adaptScreen
 
 import android.content.Context
 import android.content.Intent

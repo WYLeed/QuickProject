@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 17/02/21
  *     desc  : demo about FragmentUtils

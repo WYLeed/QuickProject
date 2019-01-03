@@ -10,7 +10,7 @@ import com.bsfy.superutilsmodel.util.LogUtils;
 
 /**
  * <pre>
- *     author: blankj
+ *     author: BSFY
  *
  *     time  : 2018/12/13
  *     desc  :

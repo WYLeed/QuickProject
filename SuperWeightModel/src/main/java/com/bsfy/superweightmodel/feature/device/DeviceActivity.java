@@ -18,8 +18,8 @@ import java.util.Arrays;
 
 /**
  * <pre>
- *     author: Blankj
- *     blog : http://blankj.com
+ *     author: BSFY
+ *     blog : http://BSFY.com
  *     time : 2016/09/27
  *     desc : demo about DeviceUtils
  * </pre>

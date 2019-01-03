@@ -29,7 +29,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/08/02
  *     desc  : utils about encrypt

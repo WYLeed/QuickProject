@@ -28,7 +28,7 @@ import java.util.Set;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/12/29
  *     desc  : utils about permission

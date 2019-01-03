@@ -6,7 +6,7 @@ import android.support.annotation.StringRes;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/08/16
  *     desc  : utils about string

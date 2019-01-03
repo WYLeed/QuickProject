@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.blankj.utilcode.pkg.feature.adaptScreen.AdaptScreenActivity;
-import com.blankj.utilcode.pkg.feature.vibrate.VibrateActivity;
+import com.BSFY.utilcode.pkg.feature.adaptScreen.AdaptScreenActivity;
+import com.BSFY.utilcode.pkg.feature.vibrate.VibrateActivity;
 import com.bsfy.superutilsmodel.util.BusUtils;
 import com.bsfy.superweightmodel.R;
 import com.bsfy.superweightmodel.base.BaseBackActivity;
@@ -37,7 +37,7 @@ import com.bsfy.superweightmodel.feature.toast.ToastActivity;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/29
  *     desc  :

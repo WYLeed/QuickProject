@@ -14,7 +14,7 @@ import com.bsfy.superweightmodel.R;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2017/07/01
  *     desc  : demo about BarUtils

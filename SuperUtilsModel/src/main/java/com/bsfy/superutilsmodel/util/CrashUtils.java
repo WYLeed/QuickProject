@@ -28,7 +28,7 @@ import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/09/27
  *     desc  : utils about crash

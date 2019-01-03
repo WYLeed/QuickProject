@@ -1,18 +1,18 @@
-package com.bsfy.superutilsmodel.subutils;//package com.blankj.subutil.util;
+package com.bsfy.superutilsmodel.subutils;//package com.BSFY.subutil.util;
 //
 //import android.content.Context;
 //import android.graphics.drawable.PictureDrawable;
 //import android.widget.ImageView;
 //
-//import com.blankj.subutil.R;
-//import com.blankj.subutil.util.image.GlideApp;
+//import com.BSFY.subutil.R;
+//import com.BSFY.subutil.util.image.GlideApp;
 //import com.bumptech.glide.Glide;
 //import com.bumptech.glide.load.engine.DiskCacheStrategy;
 //import com.bumptech.glide.request.RequestOptions;
 //
 ///**
 // * <pre>
-// *     author: Blankj
+// *     author: BSFY
 // *
 // *     time  : 2018/05/16
 // *     desc  :

@@ -21,7 +21,7 @@ import java.util.Locale;
 
 /**
  * <pre>
- *     author: Blankj
+ *     author: BSFY
  *
  *     time  : 2016/05/03
  *     desc  : utils about file
