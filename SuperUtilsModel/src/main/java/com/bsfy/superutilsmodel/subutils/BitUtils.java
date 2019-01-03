@@ -5,7 +5,7 @@ import android.util.Log;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/03/21
  *     desc  : 位运算工具类
  * </pre>

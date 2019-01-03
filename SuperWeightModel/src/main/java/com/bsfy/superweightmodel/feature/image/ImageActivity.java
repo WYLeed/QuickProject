@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/09/26
  *     desc  : demo about ImageUtils
  * </pre>

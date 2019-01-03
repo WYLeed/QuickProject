@@ -10,7 +10,7 @@ import java.io.File;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2017/05/10
  *     desc  : config about constants
  * </pre>

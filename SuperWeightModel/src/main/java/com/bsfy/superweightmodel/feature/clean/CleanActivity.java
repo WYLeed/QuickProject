@@ -18,7 +18,7 @@ import java.io.File;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/09/29
  *     desc  : demo about CleanUtils
  * </pre>

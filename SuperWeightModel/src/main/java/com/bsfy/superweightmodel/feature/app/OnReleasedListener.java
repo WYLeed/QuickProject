@@ -3,7 +3,7 @@ package com.bsfy.superweightmodel.feature.app;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/05/23
  *     desc  :
  * </pre>

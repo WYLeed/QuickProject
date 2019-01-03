@@ -9,7 +9,7 @@ import com.bsfy.superutilsmodel.util.Utils;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2017/09/18
  *     desc  : demo about ImageUtils
  * </pre>

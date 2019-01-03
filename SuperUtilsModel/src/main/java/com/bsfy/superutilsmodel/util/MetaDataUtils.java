@@ -13,7 +13,7 @@ import android.support.annotation.NonNull;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/05/15
  *     desc  : utils about meta-data
  * </pre>

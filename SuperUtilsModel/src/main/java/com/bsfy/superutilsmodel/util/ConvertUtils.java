@@ -24,7 +24,7 @@ import java.io.UnsupportedEncodingException;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/08/13
  *     desc  : utils about convert
  * </pre>

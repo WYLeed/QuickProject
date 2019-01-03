@@ -32,7 +32,7 @@ import static android.Manifest.permission.EXPAND_STATUS_BAR;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/09/23
  *     desc  : utils about bar
  * </pre>

@@ -22,7 +22,7 @@ import java.util.Locale;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/05/03
  *     desc  : utils about file
  * </pre>

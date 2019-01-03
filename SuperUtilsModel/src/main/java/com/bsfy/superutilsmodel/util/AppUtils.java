@@ -30,7 +30,7 @@ import java.util.List;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/08/02
  *     desc  : utils about app
  * </pre>

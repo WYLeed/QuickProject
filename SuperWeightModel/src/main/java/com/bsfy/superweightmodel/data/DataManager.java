@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/01/08
  *     desc  : manager about data
  * </pre>

@@ -15,7 +15,7 @@ import com.bsfy.superweightmodel.R;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2017/08/31
  *     desc  : demo about ToastUtils
  * </pre>

@@ -7,7 +7,7 @@ import android.view.View;
 /**
  * <pre>
  *     author: blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/12/29
  *     desc  : utils about anti shake
  * </pre>

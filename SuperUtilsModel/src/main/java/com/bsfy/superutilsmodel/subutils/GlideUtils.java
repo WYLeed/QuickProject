@@ -13,7 +13,7 @@ package com.bsfy.superutilsmodel.subutils;//package com.blankj.subutil.util;
 ///**
 // * <pre>
 // *     author: Blankj
-// *     blog  : http://blankj.com
+// *
 // *     time  : 2018/05/16
 // *     desc  :
 // * </pre>

@@ -60,7 +60,7 @@ import javax.xml.transform.stream.StreamSource;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/09/21
  *     desc  : utils about log
  * </pre>

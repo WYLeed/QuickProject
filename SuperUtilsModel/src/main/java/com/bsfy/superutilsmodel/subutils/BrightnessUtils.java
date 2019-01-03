@@ -15,7 +15,7 @@ import com.bsfy.superutilsmodel.util.Utils;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/02/08
  *     desc  : 亮度相关工具类
  * </pre>

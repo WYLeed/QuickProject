@@ -9,7 +9,7 @@ ext {
     versionName = '1.0.0'// E.g. 1.9.72 => 1,009,072
 
     bus = [
-            isDebug: false,
+            isDebug: true,
             version: '1.6',
             group  : 'com.blankj'
     ]
@@ -26,7 +26,6 @@ ext {
                     "com.github.dcendents:android-maven-gradle-plugin:2.1",// 上传到 maven
                     "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4",// 上传到 bintray
                     "tech.harmonysoft:traute-gradle:1.1.8",// 注解转非空判断
-                    "com.blankj:bus-gradle-plugin:$bus.version",// 组件化 Static Bus
             ],
 
             // lib
@@ -41,17 +40,18 @@ ext {
                     android      : "com.squareup.leakcanary:leakcanary-android:$leakcanary_version",
                     android_no_op: "com.squareup.leakcanary:leakcanary-android-no-op:$leakcanary_version",
             ],
-            free_proguard: "com.blankj:free-proguard:0.0.7",
-            adapt_screen : "com.blankj:adapt-screen:0.0.3",
+            free_proguard: "com.blankj:free-proguard:0.0.7",         //配置混淆
+            adapt_screen : "com.blankj:adapt-screen:0.0.3",          //Adapter 适配器
 
             gson         : "com.google.code.gson:gson:2.8.2",
             glide        : "com.github.bumptech.glide:glide:4.7.1",
             retrofit     : "com.squareup.retrofit2:retrofit:2.4.0",
-            javassist    : "org.javassist:javassist:3.24.0-GA",
-            commons_io   : "commons-io:commons-io:2.5",
+
+            javassist    : "org.javassist:javassist:3.24.0-GA",      //Java动态编程之javassist
+            commons_io   : "commons-io:commons-io:2.5",              //FileUtils
 
             junit        : "junit:junit:4.12",
-            robolectric  : "org.robolectric:robolectric:3.1.2",
+            robolectric  : "org.robolectric:robolectric:3.1.2",      //单元测试
+            bottom_bar   : "com.roughike:bottom-bar:2.3.1"           //主页底部的TAB
     ]
 }
-//./gradlew clean utilcode-lib:bintrayUpload

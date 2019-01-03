@@ -33,7 +33,7 @@ import java.util.concurrent.ConcurrentHashMap;
  *       \  \:\/:/      \  \::/      \  \:\        \  \:\        \  \:\         /__/:/
  *        \  \::/        \__\/        \  \:\        \  \:\        \  \:\        \__\/
  *         \__\/                       \__\/         \__\/         \__\/
- *     blog  : http://blankj.com
+ *
  *     time  : 16/12/08
  *     desc  : utils about initialization
  * </pre>

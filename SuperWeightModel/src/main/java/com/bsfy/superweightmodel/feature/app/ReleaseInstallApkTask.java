@@ -8,7 +8,7 @@ import com.bsfy.superweightmodel.Config;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/05/23
  *     desc  :
  * </pre>

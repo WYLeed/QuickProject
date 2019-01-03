@@ -7,7 +7,7 @@ import android.support.annotation.StringRes;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/08/16
  *     desc  : utils about string
  * </pre>

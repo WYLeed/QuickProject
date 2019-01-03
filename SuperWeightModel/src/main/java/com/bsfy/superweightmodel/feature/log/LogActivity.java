@@ -25,7 +25,7 @@ import java.util.Map;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2017/03/22
  *     desc  : demo about LogUtils
  * </pre>

@@ -9,7 +9,7 @@ import static android.Manifest.permission.VIBRATE;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/09/29
  *     desc  : utils about vibrate
  * </pre>

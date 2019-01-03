@@ -14,7 +14,7 @@ import com.bsfy.superweightmodel.data.DataManager;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/01/08
  *     desc  : demo about SPUtils
  * </pre>

@@ -12,6 +12,7 @@ dependencies {
     api dep.constraint
     api dep.kotlin
     api dep.free_proguard
+    api dep.bottom_bar
     api 'com.r0adkll:slidableactivity:2.0.5'
     compileOnly dep.leakcanary.android_no_op
 }

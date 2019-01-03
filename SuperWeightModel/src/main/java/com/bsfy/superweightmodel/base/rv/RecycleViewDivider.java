@@ -16,7 +16,7 @@ import android.widget.LinearLayout;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2017/08/17
  *     desc  :
  * </pre>

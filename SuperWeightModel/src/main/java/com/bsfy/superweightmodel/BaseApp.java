@@ -9,7 +9,7 @@ import com.bsfy.superutilsmodel.util.Utils;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/10/12
  *     desc  : app about utils
  * </pre>

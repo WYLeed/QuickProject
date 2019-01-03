@@ -16,7 +16,7 @@ import java.util.Properties;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/07/04
  *     desc  : utils about rom
  * </pre>

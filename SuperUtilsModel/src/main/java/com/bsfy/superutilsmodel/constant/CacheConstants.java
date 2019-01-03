@@ -3,7 +3,7 @@ package com.bsfy.superutilsmodel.constant;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/06/13
  *     desc  : constants of cache
  * </pre>

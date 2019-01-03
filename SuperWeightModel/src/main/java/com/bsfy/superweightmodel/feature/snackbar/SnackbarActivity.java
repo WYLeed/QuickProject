@@ -21,7 +21,7 @@ import com.bsfy.superweightmodel.R;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/10/17
  *     desc  : demo about SnackbarUtils
  * </pre>

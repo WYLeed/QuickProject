@@ -19,7 +19,7 @@ import java.util.Random;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2017/07/01
  *     desc  : demo about BarUtils
  * </pre>

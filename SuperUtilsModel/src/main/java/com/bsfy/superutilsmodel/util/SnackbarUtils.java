@@ -21,7 +21,7 @@ import java.lang.ref.WeakReference;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/10/16
  *     desc  : utils about snackbar
  * </pre>

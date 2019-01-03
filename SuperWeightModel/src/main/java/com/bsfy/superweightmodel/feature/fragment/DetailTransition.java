@@ -12,7 +12,7 @@ import android.util.AttributeSet;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 17/02/21
  *     desc  : demo about FragmentUtils
  * </pre>

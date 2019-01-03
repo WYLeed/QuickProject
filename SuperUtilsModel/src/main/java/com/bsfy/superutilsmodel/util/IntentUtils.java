@@ -20,7 +20,7 @@ import static android.Manifest.permission.CALL_PHONE;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2016/09/23
  *     desc  : utils about intent
  * </pre>

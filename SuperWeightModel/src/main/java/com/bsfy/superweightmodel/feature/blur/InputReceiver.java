@@ -11,7 +11,7 @@ import com.bsfy.superutilsmodel.util.LogUtils;
 /**
  * <pre>
  *     author: blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/12/13
  *     desc  :
  * </pre>

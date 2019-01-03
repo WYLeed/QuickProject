@@ -16,7 +16,7 @@ import com.bsfy.superweightmodel.R;
 /**
  * <pre>
  *     author: Blankj
- *     blog  : http://blankj.com
+ *
  *     time  : 2018/05/15
  *     desc  : demo about MetaDataUtils
  * </pre>
