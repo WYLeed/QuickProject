@@ -3,17 +3,16 @@ apply {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     api project(':SuperUtilsModel')
+    api project(':SuperHttpModel')
 
     api dep.support.appcompat_v7
     api dep.support.design
     api dep.support.multidex
     api dep.support.cardview
-
     api dep.constraint
     api dep.kotlin
-
     // Anko Commons
     api dep.anko.commons
     // Anko Layouts
@@ -24,10 +23,17 @@ dependencies {
     api dep.anko.anko_appcompat_v7_coroutines
     // Anko SQLite
     api dep.anko.anko_sqlite
-//    api dep.anko.anko_base
-
+    //    api dep.anko.anko_base
     api dep.free_proguard
     api dep.bottom_bar
+
+    compile dep.lifecycle_runtime
+    compile dep.lifecycle_extensions
+    annotationProcessor dep.lifecycle_compiler
+    compile dep.room
+    annotationProcessor dep.room_compiler
+
     api 'com.r0adkll:slidableactivity:2.0.5'
     compileOnly dep.leakcanary.android_no_op
+
 }
