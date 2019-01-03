@@ -2,7 +2,7 @@ package com.bsfy.superweightmodel;
 
 import android.content.Context;
 
-import com.blankj.lib.base.BaseApplication;
+import com.bsfy.superweightmodel.base.BaseApplication;
 import com.bsfy.superutilsmodel.util.Utils;
 
 

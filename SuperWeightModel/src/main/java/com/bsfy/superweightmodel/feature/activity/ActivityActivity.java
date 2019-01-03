@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.blankj.lib.base.BaseBackActivity;
+import com.bsfy.superweightmodel.base.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.ActivityUtils;
 import com.bsfy.superutilsmodel.util.LogUtils;
 import com.bsfy.superutilsmodel.util.SpanUtils;

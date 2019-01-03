@@ -14,7 +14,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 
-import com.blankj.lib.base.BaseDrawerActivity;
+import com.bsfy.superweightmodel.base.BaseDrawerActivity;
 import com.bsfy.superutilsmodel.util.BarUtils;
 import com.bsfy.superutilsmodel.util.Utils;
 import com.bsfy.superweightmodel.R;

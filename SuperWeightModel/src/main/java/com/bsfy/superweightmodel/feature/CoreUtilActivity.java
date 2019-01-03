@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.blankj.lib.base.BaseBackActivity;
 import com.blankj.utilcode.pkg.feature.adaptScreen.AdaptScreenActivity;
 import com.blankj.utilcode.pkg.feature.vibrate.VibrateActivity;
 import com.bsfy.superutilsmodel.util.BusUtils;
 import com.bsfy.superweightmodel.R;
+import com.bsfy.superweightmodel.base.BaseBackActivity;
 import com.bsfy.superweightmodel.feature.activity.ActivityActivity;
 import com.bsfy.superweightmodel.feature.app.AppActivity;
 import com.bsfy.superweightmodel.feature.bar.BarActivity;

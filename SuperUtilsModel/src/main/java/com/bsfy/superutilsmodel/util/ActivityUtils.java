@@ -1053,6 +1053,9 @@ public final class ActivityUtils {
      * Return the top activity in activity's stack.
      *
      * @return the top activity in activity's stack
+     *
+     *
+     * 获取顶部的TopActivity
      */
     public static Activity getTopActivity() {
         return Utils.getActivityLifecycle().getTopActivity();

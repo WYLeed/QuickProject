@@ -10,7 +10,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 
-import com.blankj.lib.base.BaseActivity;
+import com.bsfy.superweightmodel.base.BaseActivity;
 import com.bsfy.superutilsmodel.util.BarUtils;
 import com.bsfy.superutilsmodel.util.Utils;
 import com.bsfy.superweightmodel.R;

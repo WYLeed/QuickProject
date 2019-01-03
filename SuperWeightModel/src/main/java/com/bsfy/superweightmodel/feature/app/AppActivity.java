@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
-import com.blankj.lib.base.BaseBackActivity;
+import com.bsfy.superweightmodel.base.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.AppUtils;
 import com.bsfy.superutilsmodel.util.FileUtils;
 import com.bsfy.superutilsmodel.util.LogUtils;

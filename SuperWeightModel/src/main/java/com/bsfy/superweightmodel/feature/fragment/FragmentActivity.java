@@ -11,7 +11,7 @@ import android.support.v4.app.Fragment;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.blankj.lib.base.BaseActivity;
+import com.bsfy.superweightmodel.base.BaseActivity;
 import com.bsfy.superutilsmodel.util.FragmentUtils;
 import com.bsfy.superweightmodel.R;
 

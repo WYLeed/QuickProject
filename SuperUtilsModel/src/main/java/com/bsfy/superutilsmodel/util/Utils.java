@@ -5,8 +5,13 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Application;
 import android.app.Application.ActivityLifecycleCallbacks;
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.content.FileProvider;
 
 import java.lang.reflect.Field;
@@ -158,14 +163,14 @@ public final class Utils {
 
     static class ActivityLifecycleImpl implements ActivityLifecycleCallbacks {
 
-        final LinkedList<Activity> mActivityList      = new LinkedList<>();
+        final LinkedList<Activity> mActivityList = new LinkedList<>();
         final Map<Object, OnAppStatusChangedListener> mStatusListenerMap = new ConcurrentHashMap<>();
 
         final Map<Activity, Set<OnActivityDestroyedListener>> mDestroyedListenerMap = new ConcurrentHashMap<>();
 
-        private int     mForegroundCount = 0;
-        private int     mConfigCount     = 0;
-        private boolean mIsBackground    = false;
+        private int mForegroundCount = 0;
+        private int mConfigCount = 0;
+        private boolean mIsBackground = false;
 
         @Override
         public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
@@ -342,11 +347,48 @@ public final class Utils {
             Utils.init(getContext());
             return true;
         }
-    }
 
-    ///////////////////////////////////////////////////////////////////////////
-    // interface
-    ///////////////////////////////////////////////////////////////////////////
+        @Nullable
+        @Override
+        public Cursor query(@NonNull Uri uri,
+                            @Nullable String[] projection,
+                            @Nullable String selection,
+                            @Nullable String[] selectionArgs,
+                            @Nullable String sortOrder) {
+
+            //添加—++-
+            return null;
+        }
+
+        @Nullable
+        @Override
+        public String getType(@NonNull Uri uri) {
+            return null;
+        }
+
+        @Nullable
+        @Override
+        public Uri insert(@NonNull Uri uri,
+                          @Nullable ContentValues values) {
+            return null;
+        }
+
+        @Override
+        public int delete(@NonNull Uri uri,
+                          @Nullable String selection,
+                          @Nullable String[] selectionArgs) {
+            return 0;
+        }
+
+        @Override
+        public int update(@NonNull Uri uri,
+                          @Nullable ContentValues values,
+                          @Nullable String selection,
+                          @Nullable String[] selectionArgs) {
+            return 0;
+        }
+
+    }
 
     public interface OnAppStatusChangedListener {
         void onForeground();

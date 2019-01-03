@@ -1,4 +1,4 @@
-package com.blankj.lib.base
+package com.bsfy.superweightmodel.base
 
 import android.support.annotation.StringRes
 import android.support.v4.content.ContextCompat

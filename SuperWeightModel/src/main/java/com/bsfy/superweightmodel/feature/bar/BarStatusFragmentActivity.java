@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-import com.blankj.lib.base.BaseActivity;
+import com.bsfy.superweightmodel.base.BaseActivity;
 import com.bsfy.superweightmodel.R;
 
 import java.util.ArrayList;

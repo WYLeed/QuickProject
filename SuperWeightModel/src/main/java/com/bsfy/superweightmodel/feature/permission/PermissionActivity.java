@@ -9,7 +9,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
-import com.blankj.lib.base.BaseBackActivity;
+import com.bsfy.superweightmodel.base.BaseBackActivity;
 import com.bsfy.superutilsmodel.constant.PermissionConstants;
 import com.bsfy.superutilsmodel.util.LogUtils;
 import com.bsfy.superutilsmodel.util.PermissionUtils;

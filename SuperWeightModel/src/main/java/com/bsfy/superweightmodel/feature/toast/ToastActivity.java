@@ -10,7 +10,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
 import android.view.View;
 
-import com.blankj.lib.base.BaseBackActivity;
+import com.bsfy.superweightmodel.base.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.SpanUtils;
 import com.bsfy.superutilsmodel.util.ToastUtils;
 import com.bsfy.superweightmodel.R;

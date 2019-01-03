@@ -41,9 +41,9 @@ public final class PermissionUtils {
     private static PermissionUtils sInstance;
 
     private OnRationaleListener mOnRationaleListener;
-    private SimpleCallback      mSimpleCallback;
-    private FullCallback        mFullCallback;
-    private ThemeCallback       mThemeCallback;
+    private SimpleCallback mSimpleCallback;
+    private FullCallback mFullCallback;
+    private ThemeCallback mThemeCallback;
     private Set<String> mPermissions;
     private List<String> mPermissionsRequest;
     private List<String> mPermissionsGranted;

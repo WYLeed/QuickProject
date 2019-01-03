@@ -8,7 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 
-import com.blankj.lib.base.BaseBackActivity;
+import com.bsfy.superweightmodel.base.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.CleanUtils;
 import com.bsfy.superutilsmodel.util.SnackbarUtils;
 import com.bsfy.superweightmodel.R;

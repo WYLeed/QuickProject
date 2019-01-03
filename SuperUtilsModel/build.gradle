@@ -15,8 +15,10 @@ dependencies {
         exclude group: "com.android.support"
     }
     api dep.retrofit
+    api dep.base_recyclerview_adapter_helper
 
     testImplementation dep.junit
     testImplementation dep.robolectric
     testImplementation dep.support.appcompat_v7
+
 }

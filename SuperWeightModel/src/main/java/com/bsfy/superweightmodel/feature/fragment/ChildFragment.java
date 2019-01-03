@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
-import com.blankj.lib.base.BaseFragment;
+import com.bsfy.superweightmodel.base.BaseFragment;
 import com.bsfy.superutilsmodel.util.FragmentUtils;
 import com.bsfy.superutilsmodel.util.LogUtils;
 import com.bsfy.superweightmodel.R;

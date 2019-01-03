@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.blankj.lib.base.BaseLazyFragment;
+import com.bsfy.superweightmodel.base.BaseLazyFragment;
 import com.bsfy.superutilsmodel.util.BarUtils;
 import com.bsfy.superutilsmodel.util.LogUtils;
 import com.bsfy.superweightmodel.R;

@@ -22,6 +22,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
     }
 
     configurations.all {
@@ -39,3 +43,4 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+

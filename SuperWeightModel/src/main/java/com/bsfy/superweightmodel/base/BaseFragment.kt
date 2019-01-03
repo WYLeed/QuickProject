@@ -1,4 +1,4 @@
-package com.blankj.lib.base
+package com.bsfy.superweightmodel.base
 
 import android.app.Activity
 import android.content.Context

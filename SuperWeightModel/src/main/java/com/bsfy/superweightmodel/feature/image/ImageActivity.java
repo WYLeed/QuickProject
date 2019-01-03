@@ -12,7 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 
-import com.blankj.lib.base.BaseActivity;
+import com.bsfy.superweightmodel.base.BaseActivity;
 import com.bsfy.superutilsmodel.util.ImageUtils;
 import com.bsfy.superutilsmodel.util.ToastUtils;
 import com.bsfy.superweightmodel.Config;

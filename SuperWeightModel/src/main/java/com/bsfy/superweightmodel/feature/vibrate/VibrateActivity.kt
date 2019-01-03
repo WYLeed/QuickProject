@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import com.blankj.lib.base.BaseBackActivity
+import com.bsfy.superweightmodel.base.BaseBackActivity
 import com.bsfy.superutilsmodel.util.VibrateUtils
 import com.bsfy.superweightmodel.R
 import kotlinx.android.synthetic.main.activity_vibrate.*

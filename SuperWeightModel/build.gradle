@@ -9,8 +9,23 @@ dependencies {
     api dep.support.appcompat_v7
     api dep.support.design
     api dep.support.multidex
+    api dep.support.cardview
+
     api dep.constraint
     api dep.kotlin
+
+    // Anko Commons
+    api dep.anko.commons
+    // Anko Layouts
+    api dep.anko.sdk25
+    api dep.anko.appcompat_v7
+    // Coroutine listeners for Anko Layouts
+    api dep.anko.anko_sdk25_coroutines
+    api dep.anko.anko_appcompat_v7_coroutines
+    // Anko SQLite
+    api dep.anko.anko_sqlite
+//    api dep.anko.anko_base
+
     api dep.free_proguard
     api dep.bottom_bar
     api 'com.r0adkll:slidableactivity:2.0.5'

@@ -1,11 +1,15 @@
-package com.blankj.lib.base
+package com.bsfy.superweightmodel.base
 
 import android.app.Activity
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
+import com.bsfy.superutilsmodel.constant.PermissionConstants
 import com.bsfy.superutilsmodel.util.AntiShakeUtils
+import com.bsfy.superutilsmodel.util.LogUtils
+import com.bsfy.superutilsmodel.util.PermissionUtils
+import com.bsfy.superweightmodel.helper.DialogHelper
 
 /**
  * ```
@@ -17,16 +21,35 @@ import com.bsfy.superutilsmodel.util.AntiShakeUtils
  */
 abstract class BaseActivity : AppCompatActivity(), IBaseView {
 
-    protected lateinit var mContentView: View
-    protected lateinit var mActivity: Activity
+    private lateinit var mContentView: View
+    private lateinit var mActivity: Activity
 
     override fun onCreate(savedInstanceState: Bundle?) {
         mActivity = this
         super.onCreate(savedInstanceState)
+        getRequestPermissions()
         initData(intent.extras)
         setRootLayout(bindLayout())
         initView(savedInstanceState, mContentView)
         doBusiness()
+    }
+
+    private fun getRequestPermissions() {
+        PermissionUtils.permission(PermissionConstants.STORAGE)
+                .rationale { shouldRequest -> DialogHelper.showRationaleDialog(shouldRequest) }
+                .callback(object : PermissionUtils.FullCallback {
+                    override fun onGranted(permissionsGranted: List<String>) {
+                        LogUtils.d(permissionsGranted)
+                    }
+
+                    override fun onDenied(permissionsDeniedForever: List<String>, permissionsDenied: List<String>) {
+                        if (!permissionsDeniedForever.isEmpty()) {
+                            DialogHelper.showOpenAppSettingDialog()
+                        }
+                        LogUtils.d(permissionsDeniedForever, permissionsDenied)
+                    }
+                })
+                .request()
     }
 
     override fun setRootLayout(layoutId: Int) {
@@ -40,4 +63,6 @@ abstract class BaseActivity : AppCompatActivity(), IBaseView {
             onWidgetClick(view)
         }
     }
+
+
 }
