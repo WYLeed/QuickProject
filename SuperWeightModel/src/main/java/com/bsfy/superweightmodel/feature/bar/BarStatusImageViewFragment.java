@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.bsfy.superweightmodel.base.BaseLazyFragment;
+import com.bsfy.superweightmodel.baseview.BaseLazyFragment;
 import com.bsfy.superutilsmodel.util.BarUtils;
 import com.bsfy.superutilsmodel.util.LogUtils;
 import com.bsfy.superweightmodel.R;

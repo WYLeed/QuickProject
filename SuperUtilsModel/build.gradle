@@ -14,8 +14,6 @@ dependencies {
     api(dep.glide) {
         exclude group: "com.android.support"
     }
-    api dep.retrofit
-    api dep.base_recyclerview_adapter_helper
 
     testImplementation dep.junit
     testImplementation dep.robolectric

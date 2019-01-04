@@ -1,7 +1,7 @@
 package com.bsfy.quickmodel.ui.adapter
 
-import com.bsfy.superweightmodel.base.rv.BaseViewHolder
-import com.bsfy.superweightmodel.base.rv.adapter.SingleAdapter
+import com.bsfy.superweightmodel.baseview.rv.BaseViewHolder
+import com.bsfy.superweightmodel.baseview.rv.adapter.SingleAdapter
 
 /**
  * 作者: Created by wangyu on 2019/1/3.

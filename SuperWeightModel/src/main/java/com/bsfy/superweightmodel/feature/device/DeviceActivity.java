@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
-import com.bsfy.superweightmodel.base.BaseBackActivity;
+import com.bsfy.superweightmodel.baseview.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.DeviceUtils;
 import com.bsfy.superutilsmodel.util.SpanUtils;
 import com.bsfy.superweightmodel.R;
@@ -19,7 +19,7 @@ import java.util.Arrays;
 /**
  * <pre>
  *     author: BSFY
- *     blog : http://BSFY.com
+ *     blog : com.bsfy.httpmode
  *     time : 2016/09/27
  *     desc : demo about DeviceUtils
  * </pre>

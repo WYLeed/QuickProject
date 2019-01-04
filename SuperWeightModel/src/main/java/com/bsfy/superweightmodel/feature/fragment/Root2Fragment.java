@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-import com.bsfy.superweightmodel.base.BaseFragment;
+import com.bsfy.superweightmodel.baseview.BaseFragment;
 import com.bsfy.superutilsmodel.util.FragmentUtils;
 import com.bsfy.superweightmodel.R;
 
@@ -91,18 +91,18 @@ public class Root2Fragment extends BaseFragment
 
         } else if (i == R.id.btn_add) {
             FragmentUtils.add(getFragmentManager(),
-                    ChildFragment.newInstance(),
+                    ChildFragment.Companion.newInstance(),
                     R.id.fragment_container);
 
         } else if (i == R.id.btn_add_hide) {
             FragmentUtils.add(getFragmentManager(),
-                    ChildFragment.newInstance(),
+                    ChildFragment.Companion.newInstance(),
                     R.id.fragment_container,
                     true);
 
         } else if (i == R.id.btn_add_hide_stack) {
             FragmentUtils.add(getFragmentManager(),
-                    ChildFragment.newInstance(),
+                    ChildFragment.Companion.newInstance(),
                     R.id.fragment_container,
                     true,
                     true);

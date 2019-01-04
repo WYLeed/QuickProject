@@ -1,11 +1,15 @@
 apply {
     from "${rootDir.path}/config_lib.gradle"
+
+    plugin "tech.harmonysoft.oss.traute"
+    plugin "com.github.dcendents.android-maven"
+    plugin "com.jfrog.bintray"
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    api project(':SuperUtilsModel')
     api project(':SuperHttpModel')
+    implementation project(':SuperUtilsModel')
 
     api dep.support.appcompat_v7
     api dep.support.design
@@ -23,15 +27,14 @@ dependencies {
     api dep.anko.anko_appcompat_v7_coroutines
     // Anko SQLite
     api dep.anko.anko_sqlite
-    //    api dep.anko.anko_base
     api dep.free_proguard
     api dep.bottom_bar
 
-    compile dep.lifecycle_runtime
-    compile dep.lifecycle_extensions
-    annotationProcessor dep.lifecycle_compiler
-    compile dep.room
-    annotationProcessor dep.room_compiler
+//    api dep.lifecycle_runtime
+//    api dep.lifecycle_extensions
+//    annotationProcessor dep.lifecycle_compiler
+//    api dep.room
+//    annotationProcessor dep.room_compiler
 
     api 'com.r0adkll:slidableactivity:2.0.5'
     compileOnly dep.leakcanary.android_no_op

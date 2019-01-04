@@ -1,4 +1,4 @@
-package com.BSFY.utilcode.pkg.feature.adaptScreen
+package com.bsfy.superweightmodel.feature.adaptScreen
 
 import android.content.Context
 import android.content.Intent

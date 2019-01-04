@@ -1,2 +1,27 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bsfy.superweightmodel" />
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bsfy.superweightmodel" >
+
+
+
+    <application>
+
+        <activity android:name=".feature.span.SpanActivity"/>
+        <activity android:name=".feature.activity.ActivityActivity"/>
+        <activity android:name=".feature.activity.SubActivityActivity"/>
+        <activity android:name=".feature.app.AppActivity"/>
+
+        <activity android:name=".feature.toast.ToastActivity"/>
+        <activity android:name=".feature.image.ImageActivity"/>
+        <activity android:name=".feature.keyboard.KeyboardActivity"/>
+        <activity android:name=".feature.log.LogActivity"/>
+        <activity android:name=".feature.path.PathActivity"/>
+
+        <activity android:name=".feature.bar.BarNavActivity"/>
+        <activity android:name=".feature.bar.BarNotificationActivity"/>
+        <activity android:name=".feature.bar.BarStatusFragmentActivity"/>
+        <activity android:name=".feature.bar.BarStatusColorActivity"/>
+        <activity android:name=".feature.bar.BarStatusSwipeBackActivity"/>
+    </application>
+</manifest>

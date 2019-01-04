@@ -1,11 +1,11 @@
-package com.BSFY.utilcode.pkg.feature.adaptScreen
+package com.bsfy.superweightmodel.feature.adaptScreen
 
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import com.bsfy.superweightmodel.base.BaseBackActivity
 import com.bsfy.superweightmodel.R
+import com.bsfy.superweightmodel.baseview.BaseBackActivity
 import kotlinx.android.synthetic.main.activity_adapt_screen.*
 
 class AdaptScreenActivity : BaseBackActivity() {

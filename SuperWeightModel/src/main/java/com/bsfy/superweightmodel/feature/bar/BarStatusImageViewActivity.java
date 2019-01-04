@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.bsfy.superweightmodel.base.BaseActivity;
+import com.bsfy.superweightmodel.baseview.BaseActivity;
 import com.bsfy.superutilsmodel.util.BarUtils;
 import com.bsfy.superweightmodel.R;
 

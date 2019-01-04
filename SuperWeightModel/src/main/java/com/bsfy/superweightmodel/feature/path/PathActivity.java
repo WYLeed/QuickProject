@@ -7,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
-import com.bsfy.superweightmodel.base.BaseBackActivity;
+import com.bsfy.superweightmodel.baseview.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.PathUtils;
 import com.bsfy.superutilsmodel.util.SpanUtils;
 import com.bsfy.superweightmodel.R;

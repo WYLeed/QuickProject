@@ -6,12 +6,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 
-import com.BSFY.utilcode.pkg.feature.adaptScreen.AdaptScreenActivity;
-import com.BSFY.utilcode.pkg.feature.vibrate.VibrateActivity;
 import com.bsfy.superutilsmodel.util.BusUtils;
 import com.bsfy.superweightmodel.R;
-import com.bsfy.superweightmodel.base.BaseBackActivity;
+import com.bsfy.superweightmodel.baseview.BaseBackActivity;
 import com.bsfy.superweightmodel.feature.activity.ActivityActivity;
+import com.bsfy.superweightmodel.feature.adaptScreen.AdaptScreenActivity;
 import com.bsfy.superweightmodel.feature.app.AppActivity;
 import com.bsfy.superweightmodel.feature.bar.BarActivity;
 import com.bsfy.superweightmodel.feature.blur.BlurActivity;
@@ -34,6 +33,7 @@ import com.bsfy.superweightmodel.feature.snackbar.SnackbarActivity;
 import com.bsfy.superweightmodel.feature.sp.SPActivity;
 import com.bsfy.superweightmodel.feature.span.SpanActivity;
 import com.bsfy.superweightmodel.feature.toast.ToastActivity;
+import com.bsfy.superweightmodel.feature.vibrate.VibrateActivity;
 
 /**
  * <pre>
@@ -81,7 +81,7 @@ public class CoreUtilActivity extends BaseBackActivity {
     }
 
     public void activityClick(View view) {
-        ActivityActivity.start(this);
+        ActivityActivity.Companion.start(this);
     }
 
     public void adaptScreenClick(View view) {
@@ -89,11 +89,11 @@ public class CoreUtilActivity extends BaseBackActivity {
     }
 
     public void appClick(View view) {
-        AppActivity.start(this);
+        AppActivity.Companion.start(this);
     }
 
     public void barClick(View view) {
-        BarActivity.start(this);
+        BarActivity.Companion.start(this);
     }
 
     public void blurClick(View view) {
@@ -121,7 +121,7 @@ public class CoreUtilActivity extends BaseBackActivity {
     }
 
     public void keyboardClick(View view) {
-        KeyboardActivity.start(this);
+        KeyboardActivity.Companion.start(this);
     }
 
     public void logClick(View view) {
@@ -141,15 +141,15 @@ public class CoreUtilActivity extends BaseBackActivity {
     }
 
     public void permissionClick(View view) {
-        PermissionActivity.start(this);
+        PermissionActivity.Companion.start(this);
     }
 
     public void phoneClick(View view) {
-        PhoneActivity.start(this);
+        PhoneActivity.Companion.start(this);
     }
 
     public void processClick(View view) {
-        ProcessActivity.start(this);
+        ProcessActivity.Companion.start(this);
     }
 
     public void reflectClick(View view) {
@@ -157,27 +157,27 @@ public class CoreUtilActivity extends BaseBackActivity {
     }
 
     public void resourceClick(View view) {
-        ResourceActivity.start(this);
+        ResourceActivity.Companion.start(this);
     }
 
     public void sdcardClick(View view) {
-        SDCardActivity.start(this);
+        SDCardActivity.Companion.start(this);
     }
 
     public void snackbarClick(View view) {
-        SnackbarActivity.start(this);
+        SnackbarActivity.Companion.start(this);
     }
 
     public void spClick(View view) {
-        SPActivity.start(this);
+        SPActivity.Companion.start(this);
     }
 
     public void spannableClick(View view) {
-        SpanActivity.start(this);
+        SpanActivity.Companion.start(this);
     }
 
     public void toastClick(View view) {
-        ToastActivity.start(this);
+        ToastActivity.Companion.start(this);
     }
 
     public void vibrateClick(View view) {

@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
-import com.bsfy.superweightmodel.base.BaseBackActivity;
+import com.bsfy.superweightmodel.baseview.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.ActivityUtils;
 import com.bsfy.superutilsmodel.util.AppUtils;
 import com.bsfy.superutilsmodel.util.ImageUtils;

@@ -11,8 +11,8 @@ import android.view.View;
 import android.widget.TextView;
 
 
-import com.bsfy.superweightmodel.base.BaseApplication;
-import com.bsfy.superweightmodel.base.BaseBackActivity;
+import com.bsfy.superweightmodel.baseview.BaseApplication;
+import com.bsfy.superweightmodel.baseview.BaseBackActivity;
 import com.bsfy.superutilsmodel.util.LogUtils;
 import com.bsfy.superweightmodel.Config;
 import com.bsfy.superweightmodel.R;

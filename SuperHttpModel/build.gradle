@@ -1,11 +1,13 @@
 apply {
     from "${rootDir.path}/config_lib.gradle"
+
+    plugin "tech.harmonysoft.oss.traute"
+    plugin "com.github.dcendents.android-maven"
+    plugin "com.jfrog.bintray"
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api project(':SuperUtilsModel')
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     api dep.logging_interceptor
     api dep.okhttp
     api dep.disklrucache
@@ -13,5 +15,5 @@ dependencies {
     api dep.rxandroid
     api dep.adapter_rxjava
     api dep.retrofit
-
+    implementation project(':SuperUtilsModel')
 }

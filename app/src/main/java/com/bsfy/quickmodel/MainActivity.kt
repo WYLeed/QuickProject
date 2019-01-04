@@ -5,10 +5,8 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.bsfy.quickmodel.entity.common.NormalImageEntity
 import com.bsfy.quickmodel.ui.adapter.main.HomeAdapter
-import com.bsfy.superweightmodel.base.BaseActivity
-import com.bsfy.superweightmodel.feature.image.ImageActivity
+import com.bsfy.superweightmodel.baseview.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import org.jetbrains.anko.toast
 
 
 class MainActivity : BaseActivity() {

@@ -5,8 +5,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bsfy.superweightmodel.R;
-import com.bsfy.superweightmodel.base.rv.BaseViewHolder;
-import com.bsfy.superweightmodel.base.rv.adapter.SingleAdapter;
+import com.bsfy.superweightmodel.baseview.rv.BaseViewHolder;
+import com.bsfy.superweightmodel.baseview.rv.adapter.SingleAdapter;
 
 import java.util.List;
 
