@@ -1,0 +1,28 @@
+apply {
+    from "${rootDir.path}/config_lib.gradle"
+
+    plugin "tech.harmonysoft.oss.traute"
+    plugin "com.github.dcendents.android-maven"
+    plugin "com.jfrog.bintray"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+
+    api dep.support.appcompat_v7
+    api dep.support.appcompat_v4
+    api dep.support.appcompat_percent
+
+    api(dep.glide) {
+        exclude group: "com.android.support"
+    }
+    api dep.glide_annotations
+    annotationProcessor dep.glide_compiler
+    api dep.glide_okhttp3
+
+    implementation project(':SuperHttpModel')
+
+
+
+}

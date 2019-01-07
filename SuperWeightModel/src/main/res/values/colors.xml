@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
+
     <color name="colorPrimaryOrigin">#3F51B5</color>
     <color name="colorPrimaryDarkOrigin">#303F9F</color>
     <color name="colorAccentOrigin">#FF4081</color>
@@ -8,7 +12,7 @@
     <color name="colorAccentHalfTrans">#80245C50</color>
 
     <color name="white">#FFFFFF</color>
-    <color name="light_black">#191919</color>
+
 
     <color name="rainbow_red">#bf0c43</color>
     <color name="rainbow_yellow">#f9ba15</color>
@@ -37,4 +41,10 @@
     <color name="colorBackground">#FFFFFF</color>
     <color name="colorBackgroundDark">#f2f2f2</color>
     <color name="colorDivision">#33aaaaaa</color>
+
+
+
+    <color name="light_black">#191919</color>
+
+
 </resources>

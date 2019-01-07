@@ -18,6 +18,9 @@ android {
         multiDexEnabled true
 //        resValue "string", "app_name", rootProject.appName + suffix
 
+
+        vectorDrawables.useSupportLibrary = true
+
         renderscriptSupportModeEnabled true
     }
 
@@ -45,6 +48,15 @@ android {
         exclude 'META-INF/NOTICE.txt'
     }
 
+
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
 }
 

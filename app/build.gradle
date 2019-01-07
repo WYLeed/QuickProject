@@ -5,4 +5,7 @@ apply {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation project(':SuperWeightModel')
+    implementation project(':SuperUtilsModel')
+    implementation project(':SuperGlideModel')
+    implementation project(':SuperWebModel')
 }

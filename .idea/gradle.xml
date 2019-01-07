@@ -8,8 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/SuperGlideModel" />
             <option value="$PROJECT_DIR$/SuperHttpModel" />
             <option value="$PROJECT_DIR$/SuperUtilsModel" />
+            <option value="$PROJECT_DIR$/SuperWebModel" />
             <option value="$PROJECT_DIR$/SuperWeightModel" />
             <option value="$PROJECT_DIR$/app" />
           </set>

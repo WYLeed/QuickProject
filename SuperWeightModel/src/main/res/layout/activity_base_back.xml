@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         app:srlDragRate="0.75"
         app:srlEnableLoadMore="true"
+        android:background="@color/colorPrimary"
         app:srlEnablePureScrollMode="true">
 
         <FrameLayout

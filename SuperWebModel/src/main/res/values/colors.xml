@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="loading_orange">#f57c00</color> <!-- 橙色 -->
+    <color name="loading_transparent">#00000000</color>
+
+</resources>

@@ -1,132 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <com.scwang.smartrefresh.layout.SmartRefreshLayout
-        android:id="@+id/refreshLayout"
+    <LinearLayout
+        android:id="@+id/profile"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srlDragRate="0.75"
-        app:srlEnableLoadMore="true"
-        app:srlEnablePureScrollMode="true">
+        android:layout_height="wrap_content"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/profile"
+        <com.bsfy.glidemodel.GlideImageView
+            android:id="@+id/iv_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="70dp"
+            android:src="@mipmap/image_avatar_3" />
+
+        <TextView
+            style="@style/AppTheme.Label.Title.Large"
+            android:layout_marginTop="@dimen/dimenPaddingCommon"
+            android:text="github"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_40" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <com.flyco.roundview.RoundFrameLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:rv_backgroundColor="#ff11bb"
+            app:rv_isRadiusHalfHeight="true">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimenPaddingMin"
+                app:srcCompat="@drawable/ic_fly_refresh_smartphone"
+                tools:ignore="VectorDrawableCompat" />
+        </com.flyco.roundview.RoundFrameLayout>
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="70dp"
-                    android:src="@mipmap/image_avatar_3"
-                    app:civ_border_color="@android:color/white"
-                    app:civ_border_width="2dp" />
+        <android.support.v7.widget.AppCompatEditText
+            style="@style/Edit_Normal_Line"
+            android:hint="@string/login_hint_account" />
+    </LinearLayout>
 
-                <TextView
-                    style="@style/AppTheme.Label.Title.Large"
-                    android:layout_marginTop="@dimen/dimenPaddingCommon"
-                    android:text="github"
-                    android:textColor="@android:color/white"
-                    android:textSize="@dimen/font_40" />
-            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
 
-            <LinearLayout
+        android:padding="10dp">
+
+        <com.flyco.roundview.RoundFrameLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:rv_backgroundColor="#11bbff"
+            app:rv_isRadiusHalfHeight="true">
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#77ffffff"
-                android:paddingBottom="5dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:paddingTop="5dp">
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimenPaddingMin"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_fly_refresh_smartphone"
+                tools:ignore="VectorDrawableCompat" />
+        </com.flyco.roundview.RoundFrameLayout>
 
-                <com.flyco.roundview.RoundFrameLayout
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    app:rv_backgroundColor="#ff11bb"
-                    app:rv_isRadiusHalfHeight="true">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/dimenPaddingCommon"
-                        android:contentDescription="@string/app_name"
-                        app:srcCompat="@drawable/ic_fly_refresh_poll"
-                        tools:ignore="VectorDrawableCompat" />
-                </com.flyco.roundview.RoundFrameLayout>
-
-                <TextView
-                    style="@style/AppTheme.Label.Title"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="Show My Poll" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#aaffffff"
-                android:paddingBottom="5dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:paddingTop="5dp">
-
-                <com.flyco.roundview.RoundFrameLayout
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    app:rv_backgroundColor="#11bbff"
-                    app:rv_isRadiusHalfHeight="true">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="@dimen/dimenPaddingCommon"
-                        android:contentDescription="@string/app_name"
-                        app:srcCompat="@drawable/ic_fly_refresh_smartphone"
-                        tools:ignore="VectorDrawableCompat" />
-                </com.flyco.roundview.RoundFrameLayout>
-
-                <TextView
-                    style="@style/AppTheme.Label.Title"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:text="Show My Phoe" />
-            </LinearLayout>
+        <android.support.v7.widget.AppCompatEditText
+            style="@style/Edit_Normal_Line"
+            android:hint="@string/login_hint_password" />
+    </LinearLayout>
 
 
-            <com.flyco.roundview.RoundTextView
-                style="@style/AppTheme.Label.Title"
-                android:layout_width="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="25dp"
-                android:gravity="center"
-                android:paddingBottom="10dp"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
-                android:paddingTop="10dp"
-                android:text="@string/login_title"
-                android:textColor="@android:color/white"
-                app:rv_isRadiusHalfHeight="true"
-                app:rv_strokeColor="@android:color/white"
-                app:rv_strokeWidth="1dp" />
+    <com.flyco.roundview.RoundTextView
+        android:id="@+id/tv_login"
+        style="@style/AppTheme.Label.Title"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        android:text="@string/login_title"
+        android:textColor="@android:color/white"
+        app:rv_isRadiusHalfHeight="true"
+        app:rv_strokeColor="@android:color/white"
+        app:rv_strokeWidth="1dp" />
 
-        </LinearLayout>
-    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
-</FrameLayout>
+</LinearLayout>

@@ -2,11 +2,8 @@ package com.bsfy.superweightmodel.baseview
 
 import android.support.annotation.DrawableRes
 import android.support.annotation.StringRes
-import android.support.v4.content.ContextCompat
 import android.view.LayoutInflater
 import android.view.MenuItem
-import com.bsfy.superutilsmodel.util.BarUtils
-import com.bsfy.superutilsmodel.util.Utils
 import com.bsfy.superutilsmodel.util.weight.StatusBarUtil
 import com.bsfy.superweightmodel.R
 import com.r0adkll.slidr.Slidr
@@ -33,10 +30,6 @@ abstract class BaseBackBarActivity : BaseActivity() {
         StatusBarUtil.immersive(this)
         StatusBarUtil.setPaddingSmart(this, toolbar)
         StatusBarUtil.setPaddingSmart(this, findViewById(R.id.blurView))
-
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        BarUtils.setStatusBarColor(this, ContextCompat.getColor(Utils.getApp(), R.color.colorPrimary), 0)
-        BarUtils.addMarginTopEqualStatusBarHeight(fl_main)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -53,4 +46,6 @@ abstract class BaseBackBarActivity : BaseActivity() {
     fun setBarBackIcon(@DrawableRes resId: Int) {
         toolbar?.setNavigationIcon(resId)
     }
+
+
 }

@@ -11,9 +11,6 @@ dependencies {
     compileOnly dep.support.design
 
     api dep.gson
-    api(dep.glide) {
-        exclude group: "com.android.support"
-    }
 
     testImplementation dep.junit
     testImplementation dep.robolectric
