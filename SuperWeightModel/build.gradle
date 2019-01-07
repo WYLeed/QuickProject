@@ -32,9 +32,12 @@ dependencies {
 
     api dep.smart_refresh_layout
     api dep.smart_refresh_header
+
     api dep.real_time_blurview
     api dep.circleimageview
     api dep.flycoRoundView_lib
+    api dep.loadinglayout
+    api dep.avi_library
 
 //    api dep.lifecycle_runtime
 //    api dep.lifecycle_extensions

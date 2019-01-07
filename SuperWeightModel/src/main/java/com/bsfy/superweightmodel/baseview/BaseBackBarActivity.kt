@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import com.bsfy.superutilsmodel.util.BarUtils
 import com.bsfy.superutilsmodel.util.Utils
+import com.bsfy.superutilsmodel.util.weight.StatusBarUtil
 import com.bsfy.superweightmodel.R
 import com.r0adkll.slidr.Slidr
 import kotlinx.android.synthetic.main.activity_base_back.*
@@ -28,6 +29,11 @@ abstract class BaseBackBarActivity : BaseActivity() {
             LayoutInflater.from(this).inflate(layoutId, drawerContainerView)
         }
         setSupportActionBar(toolbar)
+        //状态栏透明和间距处理
+        StatusBarUtil.immersive(this)
+        StatusBarUtil.setPaddingSmart(this, toolbar)
+        StatusBarUtil.setPaddingSmart(this, findViewById(R.id.blurView))
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         BarUtils.setStatusBarColor(this, ContextCompat.getColor(Utils.getApp(), R.color.colorPrimary), 0)
         BarUtils.addMarginTopEqualStatusBarHeight(fl_main)

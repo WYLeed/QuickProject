@@ -16,7 +16,7 @@ class LoginActivity : BaseBackBarActivity() {
     }
 
     override fun initView(savedInstanceState: Bundle?, contentView: View) {
-        setBarTitle(R.string.login_title)
+
     }
 
     override fun doBusiness() {

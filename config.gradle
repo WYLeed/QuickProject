@@ -98,7 +98,9 @@ ext {
 
             real_time_blurview              : 'com.github.mmin18:realtimeblurview:1.0.6',
             circleimageview                 : 'de.hdodenhof:circleimageview:2.2.0',
-            flycoRoundView_lib              : 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+            flycoRoundView_lib              : 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar',
+            loadinglayout                   : 'com.github.czy1121:loadinglayout:1.0.1',
+            avi_library                     : 'com.wang.avi:library:2.1.3'
 
 
     ]
