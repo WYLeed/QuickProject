@@ -17,6 +17,8 @@ android {
         targetSdkVersion rootProject.targetSdkVersion
         multiDexEnabled true
 //        resValue "string", "app_name", rootProject.appName + suffix
+
+        renderscriptSupportModeEnabled true
     }
 
     buildTypes {

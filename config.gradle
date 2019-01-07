@@ -94,7 +94,11 @@ ext {
 
             //For Room
             room                            : "android.arch.persistence.room:runtime:1.0.0-alpha1",
-            room_compiler                   : "android.arch.persistence.room:compiler:1.0.0-alpha1"
+            room_compiler                   : "android.arch.persistence.room:compiler:1.0.0-alpha1",
+
+            real_time_blurview              : 'com.github.mmin18:realtimeblurview:1.0.6',
+            circleimageview                 : 'de.hdodenhof:circleimageview:2.2.0',
+            flycoRoundView_lib              : 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
 
 
     ]

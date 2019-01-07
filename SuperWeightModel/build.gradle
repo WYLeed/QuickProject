@@ -30,6 +30,12 @@ dependencies {
     api dep.free_proguard
     api dep.bottom_bar
 
+    api dep.smart_refresh_layout
+    api dep.smart_refresh_header
+    api dep.real_time_blurview
+    api dep.circleimageview
+    api dep.flycoRoundView_lib
+
 //    api dep.lifecycle_runtime
 //    api dep.lifecycle_extensions
 //    annotationProcessor dep.lifecycle_compiler
