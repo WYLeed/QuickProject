@@ -33,7 +33,7 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * <p>描述：实现缓存策略的基类</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/24 10:35<br>
  * 版本： v2.0<br>
  */

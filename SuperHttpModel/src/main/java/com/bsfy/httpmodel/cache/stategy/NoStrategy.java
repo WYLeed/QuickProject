@@ -27,7 +27,7 @@ import io.reactivex.functions.Function;
 
 /**
  * <p>描述：网络加载，不缓存</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/7/29 11:28 <br>
  * 版本： v1.0<br>
  */

@@ -38,7 +38,7 @@ import retrofit2.http.Body;
 
 /**
  * <p>描述：body请求的基类</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/22 17:13 <br>
  * 版本： v1.0<br>
  */

@@ -25,7 +25,7 @@ import okhttp3.Cookie;
 
 /**
  * <p>描述：对存储的cookie进行序列化</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/20 16:35<br>
  * 版本： v2.0<br>
  */

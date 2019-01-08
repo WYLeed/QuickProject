@@ -12,4 +12,8 @@ public class LoginModel extends BaseModel {
     public LoginModel(Application application) {
         super(application);
     }
+
+
+
+
 }

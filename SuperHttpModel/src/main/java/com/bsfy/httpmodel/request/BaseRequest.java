@@ -63,7 +63,7 @@ import static com.bsfy.httpmodel.EasyHttp.getRxCache;
 
 /**
  * <p>描述：所有请求的基类</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/28 17:19 <br>
  * 版本： v1.0<br>
  */

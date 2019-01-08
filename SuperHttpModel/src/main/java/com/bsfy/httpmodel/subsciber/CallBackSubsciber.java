@@ -28,7 +28,7 @@ import io.reactivex.annotations.NonNull;
 /**
  * <p>描述：带有callBack的回调</p>
  * 主要作用是不需要用户订阅，只要实现callback回调<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/28 17:10<br>
  * 版本： v2.0<br>
  */

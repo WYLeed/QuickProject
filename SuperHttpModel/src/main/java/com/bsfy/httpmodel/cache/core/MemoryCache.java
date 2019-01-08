@@ -21,7 +21,7 @@ import java.lang.reflect.Type;
 /**
  * <p>描述：内存缓存</p>
  * 内存缓存针对缓存的时间不好处理，暂时没有写内存缓存，等后面有思路了，再加上该部分。<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/1/7 15:22<br>
  * 版本： v2.0<br>
  */

@@ -29,7 +29,7 @@ import okhttp3.Response;
 
 /**
  * <p>描述：支持离线缓存,使用OKhttp自带的缓存功能</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  *     
  * 配置Okhttp的Cache<br>
  * 配置请求头中的cache-control或者统一处理所有请求的请求头<br>

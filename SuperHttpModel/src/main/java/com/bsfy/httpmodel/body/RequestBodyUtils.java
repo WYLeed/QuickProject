@@ -28,7 +28,7 @@ import okio.Source;
 
 /**
  * <p>描述：请求体处理工具类</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/15 16:35 <br>
  * 版本： v1.0<br>
  */

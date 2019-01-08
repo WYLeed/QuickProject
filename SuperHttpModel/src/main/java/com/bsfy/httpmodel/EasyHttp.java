@@ -74,7 +74,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
  * 9.支持okhttp相关参数，包括拦截器</br>
  * 10.支持Retrofit相关参数</br>
  * 11.支持Cookie管理</br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/25 15:25 <br>
  * 版本： v1.0<br>
  */

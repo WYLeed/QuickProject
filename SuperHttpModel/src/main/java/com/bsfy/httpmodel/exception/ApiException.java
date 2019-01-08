@@ -35,7 +35,7 @@ import retrofit2.HttpException;
 
 /**
  * <p>描述：统一处理了API异常错误</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/15 16:50 <br>
  * 版本： v1.0<br>
  */

@@ -24,7 +24,7 @@ import java.lang.reflect.Type;
 
 /**
  * <p>描述：网络请求回调</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/28 16:54<br>
  * 版本： v2.0<br>
  */

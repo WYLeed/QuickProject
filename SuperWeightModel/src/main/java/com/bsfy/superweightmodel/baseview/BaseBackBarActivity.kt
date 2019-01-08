@@ -47,5 +47,8 @@ abstract class BaseBackBarActivity : BaseActivity() {
         toolbar?.setNavigationIcon(resId)
     }
 
+    fun setBarBg(@DrawableRes resId: Int) {
+        toolbar?.setBackgroundColor(resId)
+    }
 
 }

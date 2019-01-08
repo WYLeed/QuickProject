@@ -31,7 +31,7 @@ import okhttp3.ResponseBody;
 /**
  * <p>描述：提供回调代理</p>
  * 主要用于可以自定义ApiResult<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/16 17:59 <br>
  * 版本： v1.0<br>
  */

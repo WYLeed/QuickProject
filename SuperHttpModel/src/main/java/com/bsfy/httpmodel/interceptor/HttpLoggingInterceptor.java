@@ -38,7 +38,7 @@ import okio.Buffer;
 /**
  * <p>描述：设置日志拦截器</p>
  * 提供了详细、易懂的日志打印<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/19 16:35<br>
  * 版本： v2.0<br>
  */

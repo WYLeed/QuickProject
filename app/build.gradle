@@ -8,4 +8,20 @@ dependencies {
     implementation project(':SuperUtilsModel')
     implementation project(':SuperGlideModel')
     implementation project(':SuperWebModel')
+
+//    api dep.lifecycle_runtime
+//    api dep.lifecycle_extensions
+//    annotationProcessor dep.lifecycle_compiler
+
+
+    api dep.lifecycle_extensions
+    api dep.lifecycle_viewmodel
+    api dep.lifecycle_livedata
+    api dep.lifecycle_runtime
+    api dep.lifecycle_compiler
+    api dep.lifecycle_common
+    api dep.lifecycle_reactivestreams
+
+
+
 }

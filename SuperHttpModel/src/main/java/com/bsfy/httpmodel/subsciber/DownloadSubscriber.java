@@ -36,7 +36,7 @@ import io.reactivex.functions.Consumer;
 
 /**
  * <p>描述：定义一个下载的订阅者</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/19 16:35<br>
  * 版本： v2.0<br>
  */

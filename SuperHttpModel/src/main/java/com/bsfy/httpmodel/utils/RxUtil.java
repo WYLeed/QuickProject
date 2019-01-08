@@ -34,7 +34,7 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * <p>描述：线程调度工具</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/15 17:12 <br>
  * 版本： v1.0<br>
  */

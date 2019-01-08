@@ -69,7 +69,7 @@ import io.reactivex.exceptions.Exceptions;
  * .diskMax(20*1024*1024)//不设置， 默为认50MB<br>
  * .build();</br>
  * </P>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/24 10:35<br>
  * 版本： v2.0<br>
  */

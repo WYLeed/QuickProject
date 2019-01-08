@@ -33,7 +33,7 @@ import static com.bsfy.httpmodel.utils.Utils.isNetworkAvailable;
  * 1.可以防止内存泄露。<br>
  * 2.在onStart()没有网络时直接onCompleted();<br>
  * 3.统一处理了异常<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/20 10:35<br>
  * 版本： v2.0<br>
  */

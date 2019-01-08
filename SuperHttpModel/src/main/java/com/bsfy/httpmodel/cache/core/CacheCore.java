@@ -31,7 +31,7 @@ import okio.ByteString;
  * <p>
  * 以后可以扩展 增加内存缓存，但是内存缓存的时间不好控制，暂未实现，后续可以添加》<br>
  * <p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/24 10:35<br>
  * 版本： v2.0<br>
  * <p>

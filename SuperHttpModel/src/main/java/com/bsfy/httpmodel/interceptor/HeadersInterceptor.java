@@ -29,7 +29,7 @@ import okhttp3.Response;
 
 /**
  * <p>描述：配置公共头部</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/19 16:46<br>
  * 版本： v2.0<br>
  */

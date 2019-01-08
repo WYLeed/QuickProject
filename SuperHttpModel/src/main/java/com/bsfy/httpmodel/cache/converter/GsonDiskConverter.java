@@ -52,7 +52,7 @@ import com.bsfy.httpmodel.utils.HttpLog;
  * 《-------骚年，自己根据实际需求选择吧！！！------------》<br>
  * 《--看到这里，顺便提下知道IDiskConverter的好处了吧，面向接口编程是不是很灵活(*^_^*)----------》<br>
  * <p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/24 17:35<br>
  * 版本： v2.0<br>
  */

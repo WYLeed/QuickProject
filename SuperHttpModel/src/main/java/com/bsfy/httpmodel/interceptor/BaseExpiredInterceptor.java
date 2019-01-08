@@ -34,7 +34,7 @@ import static com.bsfy.httpmodel.utils.HttpUtil.UTF8;
 /**
  * <p>描述：判断响应是否有效的处理</p>
  * 继承后扩展各种无效响应处理：包括token过期、账号异地登录、时间戳过期、签名sign错误等<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/4 19:11 <br>
  * 版本： v1.0<br>
  */

@@ -30,7 +30,7 @@ import java.lang.reflect.Type;
 
 /**
  * <p>描述：磁盘缓存实现类</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/24 10:35<br>
  * 版本： v2.0<br>
  *

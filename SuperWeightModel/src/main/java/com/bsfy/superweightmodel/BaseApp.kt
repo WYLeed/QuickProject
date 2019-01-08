@@ -4,9 +4,12 @@ import android.support.v7.app.AppCompatDelegate
 import com.bsfy.superutilsmodel.util.Utils
 import com.bsfy.superutilsmodel.util.weight.DynamicTimeFormat
 import com.bsfy.superweightmodel.baseview.BaseApplication
+import com.github.moduth.blockcanary.BlockCanary
 import com.scwang.smartrefresh.layout.SmartRefreshLayout
 import com.scwang.smartrefresh.layout.header.ClassicsHeader
 import com.squareup.leakcanary.LeakCanary
+
+
 
 
 /**
@@ -31,10 +34,12 @@ open class BaseApp : BaseApplication() {
             return
         }
         LeakCanary.install(this)
+
+        BlockCanary.install(this, AppBlockCanaryContext()).start()
     }
 
     companion object {
-        var instance: BaseApp? = null
+        public var instance: BaseApp? = null
 
 
         init {

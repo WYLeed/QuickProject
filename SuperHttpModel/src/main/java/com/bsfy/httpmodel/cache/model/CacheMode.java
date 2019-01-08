@@ -18,7 +18,7 @@ package com.bsfy.httpmodel.cache.model;
 
 /**
  * <p>描述：网络请求策略</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/24 10:35<br>
  * 版本： v2.0<br>
  */

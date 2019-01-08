@@ -33,7 +33,7 @@ import com.bsfy.httpmodel.utils.HttpLog;
  * <p>描述：上传请求体</p>
  * 1.具有上传进度回调通知功能<br>
  * 2.防止频繁回调，上层无用的刷新<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/23 16:38 <br>
  * 版本： v1.0<br>
  */

@@ -45,6 +45,6 @@
 
 
     <color name="light_black">#191919</color>
-
+    <color name="light_white">#ffffff</color>
 
 </resources>

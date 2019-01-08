@@ -32,7 +32,7 @@ import okhttp3.ResponseBody;
 
 /**
  * <p>描述：下载请求</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/28 17:20 <br>
  * 版本： v1.0<br>
  */

@@ -26,7 +26,7 @@ import io.reactivex.annotations.NonNull;
 
 /**
  * <p>描述：错误转换Transformer</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/15 17:09 <br>
  * 版本： v1.0<br>
  */

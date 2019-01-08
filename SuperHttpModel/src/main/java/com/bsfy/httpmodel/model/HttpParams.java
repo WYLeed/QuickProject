@@ -33,7 +33,7 @@ import okhttp3.MediaType;
 
 /**
  * <p>描述：普通参数</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/2 16:58 <br>
  * 版本： v1.0<br>
  */

@@ -37,7 +37,7 @@ import okhttp3.ResponseBody;
 
 /**
  * <p>描述：删除请求</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/28 15:02 <br>
  * 版本： v1.0<br>
  */

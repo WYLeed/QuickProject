@@ -36,7 +36,7 @@ import okhttp3.RequestBody;
 
 /**
  * <p>描述：工具类</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/20 10:33<br>
  * 版本： v2.0<br>
  */

@@ -40,9 +40,16 @@ dependencies {
     api dep.loadinglayout
     api dep.avi_library
 
-//    api dep.lifecycle_runtime
-//    api dep.lifecycle_extensions
-//    annotationProcessor dep.lifecycle_compiler
+    api dep.blockcanary
+    api dep.floatingsearchview
+    api dep.expandable_textView
+
+
+    api dep.material_edittext
+
+    api dep.rxbinding
+    api dep.rxpermissions
+
 //    api dep.room
 //    annotationProcessor dep.room_compiler
 

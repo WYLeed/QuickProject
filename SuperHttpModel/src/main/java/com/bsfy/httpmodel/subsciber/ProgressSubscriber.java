@@ -29,7 +29,7 @@ import com.bsfy.httpmodel.exception.ApiException;
  * 1.支持自定义加载进度框<br>
  * 2.支持对话框取消时可以自动终止本次请求，取消订阅。<br>
  * <p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/12/19 16:46<br>
  * <p>
  * 修改者：zhouyou<br>

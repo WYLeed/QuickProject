@@ -24,7 +24,7 @@ import io.reactivex.functions.Function;
 
 /**
  * <p>描述：缓存结果转换</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/21 10:53 <br>
  * 版本： v1.0<br>
  */

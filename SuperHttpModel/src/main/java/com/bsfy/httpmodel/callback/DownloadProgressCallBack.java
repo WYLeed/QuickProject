@@ -18,7 +18,7 @@ package com.bsfy.httpmodel.callback;
 
 /**
  * <p>描述：下载进度回调（主线程，可以直接操作UI）</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/28 16:28 <br>
  * 版本： v1.0<br>
  */

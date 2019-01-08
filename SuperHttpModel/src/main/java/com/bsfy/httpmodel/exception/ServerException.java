@@ -18,7 +18,7 @@ package com.bsfy.httpmodel.exception;
 
 /**
  * <p>描述：处理服务器异常</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/9/15 16:51 <br>
  * 版本： v1.0<br>
  */

@@ -29,7 +29,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * 2.增加了锁机制，防止频繁读取缓存造成的异常。<br>
  * 3.子类直接考虑具体的实现细节就可以了。<br>
  * <p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2016/01/07 12:35<br>
  * 版本： v2.0<br>
  */

@@ -29,7 +29,7 @@ import io.reactivex.disposables.Disposable;
  * <p>描述：可以自定义带有加载进度框的回调</p>
  * 1.可以自定义带有加载进度框的回调,是否需要显示，是否可以取消<br>
  * 2.取消对话框会自动取消掉网络请求<br>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/24 15:35 <br>
  * 版本： v1.0<br>
  */

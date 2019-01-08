@@ -33,7 +33,7 @@ import io.reactivex.functions.Function;
 
 /**
  * <p>描述：网络请求错误重试条件</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/4/12 17:52 <br>
  * 版本： v1.0<br>
  */

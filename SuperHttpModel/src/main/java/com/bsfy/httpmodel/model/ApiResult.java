@@ -18,7 +18,7 @@ package com.bsfy.httpmodel.model;
 
 /**
  * <p>描述：提供的默认的标注返回api</p>
- * 作者： zhouyou<br>
+ * @author by bsfy
  * 日期： 2017/5/15 16:58 <br>
  * 版本： v1.0<br>
  */
