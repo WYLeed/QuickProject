@@ -19,7 +19,7 @@ package com.bsfy.httpmodel.model;
 import android.os.Build;
 import android.text.TextUtils;
 
-import com.bsfy.httpmodel.EasyHttp;
+import com.bsfy.httpmodel.SuperHttpManager;
 import com.bsfy.httpmodel.utils.HttpLog;
 
 import org.json.JSONException;
@@ -214,7 +214,7 @@ public class HttpHeaders implements Serializable {
                 Class<?> sysResCls = Class.forName("com.android.internal.R$string");
                 Field webUserAgentField = sysResCls.getDeclaredField("web_user_agent");
                 Integer resId = (Integer) webUserAgentField.get(null);
-                webUserAgent = EasyHttp.getContext().getString(resId);
+                webUserAgent = SuperHttpManager.getContext().getString(resId);
             } catch (Exception e) {
                 // We have nothing to do
             }

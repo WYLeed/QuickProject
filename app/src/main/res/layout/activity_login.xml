@@ -46,11 +46,13 @@
             android:padding="10dp">
 
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tv_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/login_hint_account"
                 android:textCursorDrawable="@drawable/bg_edit_normal"
                 android:textSize="@dimen/font_30"
+                android:text="1547773156@qq.com"
                 app:met_baseColor="@android:color/white"
                 app:met_floatingLabel="highlight"
                 app:met_maxCharacters="20"
@@ -66,11 +68,13 @@
             android:padding="10dp">
 
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/tv_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/login_hint_password"
                 android:textCursorDrawable="@drawable/bg_edit_normal"
                 android:textSize="@dimen/font_30"
+                android:text="bsfy2018"
                 app:met_baseColor="@android:color/white"
                 app:met_floatingLabel="highlight"
                 app:met_maxCharacters="20"
@@ -87,13 +91,13 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="25dp"
             android:gravity="center"
-            android:paddingBottom="15dp"
+            android:paddingBottom="12dp"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
-            android:paddingTop="15dp"
+            android:paddingTop="12dp"
             android:text="@string/login_title"
             android:textColor="@android:color/white"
-            android:textSize="@dimen/font_24"
+            android:textSize="@dimen/font_20"
             app:rv_isRadiusHalfHeight="true"
             app:rv_strokeColor="@android:color/white"
             app:rv_strokeWidth="1dp" />

@@ -10,8 +10,6 @@ import com.scwang.smartrefresh.layout.header.ClassicsHeader
 import com.squareup.leakcanary.LeakCanary
 
 
-
-
 /**
  * <pre>
  * author: BSFY
@@ -36,12 +34,11 @@ open class BaseApp : BaseApplication() {
         LeakCanary.install(this)
 
         BlockCanary.install(this, AppBlockCanaryContext()).start()
+
     }
 
     companion object {
         public var instance: BaseApp? = null
-
-
         init {
             //启用矢量图兼容
             AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)

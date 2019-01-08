@@ -19,7 +19,7 @@ package com.bsfy.httpmodel.request;
 import android.content.Context;
 import android.text.TextUtils;
 
-import com.bsfy.httpmodel.EasyHttp;
+import com.bsfy.httpmodel.SuperHttpManager;
 import com.bsfy.httpmodel.api.ApiService;
 import com.bsfy.httpmodel.cache.RxCache;
 import com.bsfy.httpmodel.cache.converter.IDiskConverter;
@@ -58,8 +58,8 @@ import retrofit2.CallAdapter;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
 
-import static com.bsfy.httpmodel.EasyHttp.getRetrofitBuilder;
-import static com.bsfy.httpmodel.EasyHttp.getRxCache;
+import static com.bsfy.httpmodel.SuperHttpManager.getRetrofitBuilder;
+import static com.bsfy.httpmodel.SuperHttpManager.getRxCache;
 
 /**
  * <p>描述：所有请求的基类</p>
@@ -106,8 +106,8 @@ public abstract class BaseRequest<R extends BaseRequest> {
 
     public BaseRequest(String url) {
         this.url = url;
-        context = EasyHttp.getContext();
-        EasyHttp config = EasyHttp.getInstance();
+        context = SuperHttpManager.getContext();
+        SuperHttpManager config = SuperHttpManager.getInstance();
         this.baseUrl = config.getBaseUrl();
         if (!TextUtils.isEmpty(this.baseUrl)){
             httpUrl = HttpUrl.parse(baseUrl);
@@ -170,7 +170,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
     }
 
     public R cacheTime(long cacheTime) {
-        if (cacheTime <= -1) cacheTime = EasyHttp.DEFAULT_CACHE_NEVER_EXPIRE;
+        if (cacheTime <= -1) cacheTime = SuperHttpManager.DEFAULT_CACHE_NEVER_EXPIRE;
         this.cacheTime = cacheTime;
         return (R) this;
     }
@@ -383,7 +383,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
     private OkHttpClient.Builder generateOkClient() {
         if (readTimeOut <= 0 && writeTimeOut <= 0 && connectTimeout <= 0 && sslParams == null
                 && cookies.size() == 0 && hostnameVerifier == null && proxy == null && headers.isEmpty()) {
-            OkHttpClient.Builder builder = EasyHttp.getOkHttpClientBuilder();
+            OkHttpClient.Builder builder = SuperHttpManager.getOkHttpClientBuilder();
             for (Interceptor interceptor : builder.interceptors()) {
                 if (interceptor instanceof BaseDynamicInterceptor) {
                     ((BaseDynamicInterceptor) interceptor).sign(sign).timeStamp(timeStamp).accessToken(accessToken);
@@ -391,7 +391,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
             }
             return builder;
         } else {
-            final OkHttpClient.Builder newClientBuilder = EasyHttp.getOkHttpClient().newBuilder();
+            final OkHttpClient.Builder newClientBuilder = SuperHttpManager.getOkHttpClient().newBuilder();
             if (readTimeOut > 0)
                 newClientBuilder.readTimeout(readTimeOut, TimeUnit.MILLISECONDS);
             if (writeTimeOut > 0)
@@ -402,7 +402,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
             if (sslParams != null)
                 newClientBuilder.sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager);
             if (proxy != null) newClientBuilder.proxy(proxy);
-            if (cookies.size() > 0) EasyHttp.getCookieJar().addCookies(cookies);
+            if (cookies.size() > 0) SuperHttpManager.getCookieJar().addCookies(cookies);
 
             //添加头  头添加放在最前面方便其他拦截器可能会用到
             newClientBuilder.addInterceptor(new HeadersInterceptor(headers));
@@ -446,7 +446,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
                 }
             } else {
                 //获取全局的对象重新设置
-                Retrofit.Builder newBuilder = EasyHttp.getRetrofitBuilder();
+                Retrofit.Builder newBuilder = SuperHttpManager.getRetrofitBuilder();
                 if (!TextUtils.isEmpty(baseUrl)) {
                     newBuilder.baseUrl(baseUrl);
                 }
@@ -461,7 +461,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
                 }
             } else {
                 //获取全局的对象重新设置
-                Retrofit.Builder newBuilder = EasyHttp.getRetrofitBuilder();
+                Retrofit.Builder newBuilder = SuperHttpManager.getRetrofitBuilder();
                 List<CallAdapter.Factory> listAdapterFactory = newBuilder.baseUrl(baseUrl).build().callAdapterFactories();
                 for (CallAdapter.Factory factory : listAdapterFactory) {
                     retrofitBuilder.addCallAdapterFactory(factory);
@@ -475,7 +475,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
      * 根据当前的请求参数，生成对应的RxCache和Cache
      */
     private RxCache.Builder generateRxCache() {
-        final RxCache.Builder rxCacheBuilder = EasyHttp.getRxCacheBuilder();
+        final RxCache.Builder rxCacheBuilder = SuperHttpManager.getRxCacheBuilder();
         switch (cacheMode) {
             case NO_CACHE://不使用缓存
                 final NoCacheInterceptor NOCACHEINTERCEPTOR = new NoCacheInterceptor();
@@ -484,19 +484,19 @@ public abstract class BaseRequest<R extends BaseRequest> {
                 break;
             case DEFAULT://使用Okhttp的缓存
                 if (this.cache == null) {
-                    File cacheDirectory = EasyHttp.getCacheDirectory();
+                    File cacheDirectory = SuperHttpManager.getCacheDirectory();
                     if (cacheDirectory == null) {
-                        cacheDirectory = new File(EasyHttp.getContext().getCacheDir(), "okhttp-cache");
+                        cacheDirectory = new File(SuperHttpManager.getContext().getCacheDir(), "okhttp-cache");
                     } else {
                         if (cacheDirectory.isDirectory() && !cacheDirectory.exists()) {
                             cacheDirectory.mkdirs();
                         }
                     }
-                    this.cache = new Cache(cacheDirectory, Math.max(5 * 1024 * 1024, EasyHttp.getCacheMaxSize()));
+                    this.cache = new Cache(cacheDirectory, Math.max(5 * 1024 * 1024, SuperHttpManager.getCacheMaxSize()));
                 }
                 String cacheControlValue = String.format("max-age=%d", Math.max(-1, cacheTime));
-                final CacheInterceptor REWRITE_CACHE_CONTROL_INTERCEPTOR = new CacheInterceptor(EasyHttp.getContext(), cacheControlValue);
-                final CacheInterceptorOffline REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE = new CacheInterceptorOffline(EasyHttp.getContext(), cacheControlValue);
+                final CacheInterceptor REWRITE_CACHE_CONTROL_INTERCEPTOR = new CacheInterceptor(SuperHttpManager.getContext(), cacheControlValue);
+                final CacheInterceptorOffline REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE = new CacheInterceptorOffline(SuperHttpManager.getContext(), cacheControlValue);
                 networkInterceptors.add(REWRITE_CACHE_CONTROL_INTERCEPTOR);
                 networkInterceptors.add(REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE);
                 interceptors.add(REWRITE_CACHE_CONTROL_INTERCEPTOR_OFFLINE);

@@ -94,7 +94,8 @@ ext {
             rxjava                          : "io.reactivex.rxjava2:rxjava:2.2.0",
             rxandroid                       : "io.reactivex.rxjava2:rxandroid:2.1.0",
             adapter_rxjava                  : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
-            retrofit                        : "com.squareup.retrofit2:retrofit:2.4.0",
+            retrofit2                       : "com.squareup.retrofit2:retrofit:2.4.0",
+            retrofit2_gson                  : 'com.squareup.retrofit2:converter-gson:2.4.0',
 
             //For Lifecycles, LiveData, and ViewModel
             lifecycle_extensions            : "android.arch.lifecycle:extensions:$lifecycle_version",
@@ -110,7 +111,6 @@ ext {
             lifecycle_common                : "android.arch.lifecycle:common-java8:$lifecycle_version",
             // optional - ReactiveStreams support for LiveData
             lifecycle_reactivestreams       : "android.arch.lifecycle:reactivestreams:$lifecycle_version",
-
 
 //          For Room
 //          room                            : "android.arch.persistence.room:runtime:1.0.0-alpha1",
@@ -147,10 +147,10 @@ ext {
             material_snackbar               : 'com.nispok:snackbar:2.11.+',
 
 
-            rxpermissions: 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar',
+            rxpermissions                   : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar',
 
 
-            rxbinding: 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+            rxbinding                       : 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
 
             //备用
 //            compile 'com.jaeger.statusbarutil:library:1.5.1'

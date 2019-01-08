@@ -14,7 +14,8 @@ dependencies {
     api dep.rxjava
     api dep.rxandroid
     api dep.adapter_rxjava
-    api dep.retrofit
+    api dep.retrofit2
+    api dep.retrofit2_gson
     implementation project(':SuperUtilsModel')
 
 

@@ -41,6 +41,7 @@ import retrofit2.HttpException;
  */
 @SuppressWarnings("deprecation")
 public class ApiException extends Exception {
+
     //对应HTTP的状态码
     private static final int BADREQUEST = 400;
     private static final int UNAUTHORIZED = 401;

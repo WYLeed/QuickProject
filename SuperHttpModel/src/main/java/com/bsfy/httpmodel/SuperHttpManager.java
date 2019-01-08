@@ -78,7 +78,11 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
  * 日期： 2018/4/25 15:25 <br>
  * 版本： v1.0<br>
  */
-public final class EasyHttp {
+public final class SuperHttpManager {
+
+    public static final String BASE_URL = "https://api.github.com/v3/";
+
+
     private static Application sContext;
     public static final int DEFAULT_MILLISECONDS = 60000;             //默认的超时时间
     private static final int DEFAULT_RETRY_COUNT = 3;                 //默认重试次数
@@ -94,15 +98,17 @@ public final class EasyHttp {
     private int mRetryCount = DEFAULT_RETRY_COUNT;                    //重试次数默认3次
     private int mRetryDelay = DEFAULT_RETRY_DELAY;                    //延迟xxms重试
     private int mRetryIncreaseDelay = DEFAULT_RETRY_INCREASEDELAY;    //叠加延迟
+
     private HttpHeaders mCommonHeaders;                               //全局公共请求头
     private HttpParams mCommonParams;                                 //全局公共请求参数
+
     private OkHttpClient.Builder okHttpClientBuilder;                 //okhttp请求的客户端
     private Retrofit.Builder retrofitBuilder;                         //Retrofit请求Builder
     private RxCache.Builder rxCacheBuilder;                           //RxCache请求的Builder
     private CookieManger cookieJar;                                   //Cookie管理
-    private volatile static EasyHttp singleton = null;
+    private volatile static SuperHttpManager singleton = null;
 
-    private EasyHttp() {
+    private SuperHttpManager() {
         okHttpClientBuilder = new OkHttpClient.Builder();
         okHttpClientBuilder.hostnameVerifier(new DefaultHostnameVerifier());
         okHttpClientBuilder.connectTimeout(DEFAULT_MILLISECONDS, TimeUnit.MILLISECONDS);
@@ -114,12 +120,12 @@ public final class EasyHttp {
                 .diskConverter(new SerializableDiskConverter());      //目前只支持Serializable和Gson缓存其它可以自己扩展
     }
 
-    public static EasyHttp getInstance() {
+    public static SuperHttpManager getInstance() {
         testInitialize();
         if (singleton == null) {
-            synchronized (EasyHttp.class) {
+            synchronized (SuperHttpManager.class) {
                 if (singleton == null) {
-                    singleton = new EasyHttp();
+                    singleton = new SuperHttpManager();
                 }
             }
         }
@@ -182,7 +188,7 @@ public final class EasyHttp {
     /**
      * 调试模式,默认打开所有的异常调试
      */
-    public EasyHttp debug(String tag) {
+    public SuperHttpManager debug(String tag) {
         debug(tag, true);
         return this;
     }
@@ -192,7 +198,7 @@ public final class EasyHttp {
      * 一般来说,这些异常是由于不标准的数据格式,或者特殊需要主动产生的,
      * 并不是框架错误,如果不想每次打印,这里可以关闭异常显示
      */
-    public EasyHttp debug(String tag, boolean isPrintException) {
+    public SuperHttpManager debug(String tag, boolean isPrintException) {
         String tempTag = TextUtils.isEmpty(tag)?"RxEasyHttp_":tag;
         if(isPrintException){
             HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(tempTag, isPrintException);
@@ -222,7 +228,7 @@ public final class EasyHttp {
     /**
      * https的全局访问规则
      */
-    public EasyHttp setHostnameVerifier(HostnameVerifier hostnameVerifier) {
+    public SuperHttpManager setHostnameVerifier(HostnameVerifier hostnameVerifier) {
         okHttpClientBuilder.hostnameVerifier(hostnameVerifier);
         return this;
     }
@@ -230,7 +236,7 @@ public final class EasyHttp {
     /**
      * https的全局自签名证书
      */
-    public EasyHttp setCertificates(InputStream... certificates) {
+    public SuperHttpManager setCertificates(InputStream... certificates) {
         HttpsUtils.SSLParams sslParams = HttpsUtils.getSslSocketFactory(null, null, certificates);
         okHttpClientBuilder.sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager);
         return this;
@@ -239,7 +245,7 @@ public final class EasyHttp {
     /**
      * https双向认证证书
      */
-    public EasyHttp setCertificates(InputStream bksFile, String password, InputStream... certificates) {
+    public SuperHttpManager setCertificates(InputStream bksFile, String password, InputStream... certificates) {
         HttpsUtils.SSLParams sslParams = HttpsUtils.getSslSocketFactory(bksFile, password, certificates);
         okHttpClientBuilder.sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager);
         return this;
@@ -248,7 +254,7 @@ public final class EasyHttp {
     /**
      * 全局cookie存取规则
      */
-    public EasyHttp setCookieStore(CookieManger cookieManager) {
+    public SuperHttpManager setCookieStore(CookieManger cookieManager) {
         cookieJar = cookieManager;
         okHttpClientBuilder.cookieJar(cookieJar);
         return this;
@@ -264,7 +270,7 @@ public final class EasyHttp {
     /**
      * 全局读取超时时间
      */
-    public EasyHttp setReadTimeOut(long readTimeOut) {
+    public SuperHttpManager setReadTimeOut(long readTimeOut) {
         okHttpClientBuilder.readTimeout(readTimeOut, TimeUnit.MILLISECONDS);
         return this;
     }
@@ -272,7 +278,7 @@ public final class EasyHttp {
     /**
      * 全局写入超时时间
      */
-    public EasyHttp setWriteTimeOut(long writeTimeout) {
+    public SuperHttpManager setWriteTimeOut(long writeTimeout) {
         okHttpClientBuilder.writeTimeout(writeTimeout, TimeUnit.MILLISECONDS);
         return this;
     }
@@ -280,7 +286,7 @@ public final class EasyHttp {
     /**
      * 全局连接超时时间
      */
-    public EasyHttp setConnectTimeout(long connectTimeout) {
+    public SuperHttpManager setConnectTimeout(long connectTimeout) {
         okHttpClientBuilder.connectTimeout(connectTimeout, TimeUnit.MILLISECONDS);
         return this;
     }
@@ -288,7 +294,7 @@ public final class EasyHttp {
     /**
      * 超时重试次数
      */
-    public EasyHttp setRetryCount(int retryCount) {
+    public SuperHttpManager setRetryCount(int retryCount) {
         if (retryCount < 0) throw new IllegalArgumentException("retryCount must > 0");
         mRetryCount = retryCount;
         return this;
@@ -304,7 +310,7 @@ public final class EasyHttp {
     /**
      * 超时重试延迟时间
      */
-    public EasyHttp setRetryDelay(int retryDelay) {
+    public SuperHttpManager setRetryDelay(int retryDelay) {
         if (retryDelay < 0) throw new IllegalArgumentException("retryDelay must > 0");
         mRetryDelay = retryDelay;
         return this;
@@ -320,7 +326,7 @@ public final class EasyHttp {
     /**
      * 超时重试延迟叠加时间
      */
-    public EasyHttp setRetryIncreaseDelay(int retryIncreaseDelay) {
+    public SuperHttpManager setRetryIncreaseDelay(int retryIncreaseDelay) {
         if (retryIncreaseDelay < 0)
             throw new IllegalArgumentException("retryIncreaseDelay must > 0");
         mRetryIncreaseDelay = retryIncreaseDelay;
@@ -337,7 +343,7 @@ public final class EasyHttp {
     /**
      * 全局的缓存模式
      */
-    public EasyHttp setCacheMode(CacheMode cacheMode) {
+    public SuperHttpManager setCacheMode(CacheMode cacheMode) {
         mCacheMode = cacheMode;
         return this;
     }
@@ -352,7 +358,7 @@ public final class EasyHttp {
     /**
      * 全局的缓存过期时间
      */
-    public EasyHttp setCacheTime(long cacheTime) {
+    public SuperHttpManager setCacheTime(long cacheTime) {
         if (cacheTime <= -1) cacheTime = DEFAULT_CACHE_NEVER_EXPIRE;
         mCacheTime = cacheTime;
         return this;
@@ -368,7 +374,7 @@ public final class EasyHttp {
     /**
      * 全局的缓存大小,默认50M
      */
-    public EasyHttp setCacheMaxSize(long maxSize) {
+    public SuperHttpManager setCacheMaxSize(long maxSize) {
         mCacheMaxSize = maxSize;
         return this;
     }
@@ -383,7 +389,7 @@ public final class EasyHttp {
     /**
      * 全局设置缓存的版本，默认为1，缓存的版本号
      */
-    public EasyHttp setCacheVersion(int cacheersion) {
+    public SuperHttpManager setCacheVersion(int cacheersion) {
         if (cacheersion < 0)
             throw new IllegalArgumentException("cacheersion must > 0");
         rxCacheBuilder.appVersion(cacheersion);
@@ -393,7 +399,7 @@ public final class EasyHttp {
     /**
      * 全局设置缓存的路径，默认是应用包下面的缓存
      */
-    public EasyHttp setCacheDirectory(File directory) {
+    public SuperHttpManager setCacheDirectory(File directory) {
         mCacheDirectory = Utils.checkNotNull(directory, "directory == null");
         rxCacheBuilder.diskDir(directory);
         return this;
@@ -409,7 +415,7 @@ public final class EasyHttp {
     /**
      * 全局设置缓存的转换器
      */
-    public EasyHttp setCacheDiskConverter(IDiskConverter converter) {
+    public SuperHttpManager setCacheDiskConverter(IDiskConverter converter) {
         rxCacheBuilder.diskConverter(Utils.checkNotNull(converter, "converter == null"));
         return this;
     }
@@ -417,7 +423,7 @@ public final class EasyHttp {
     /**
      * 全局设置OkHttp的缓存,默认是3天
      */
-    public EasyHttp setHttpCache(Cache cache) {
+    public SuperHttpManager setHttpCache(Cache cache) {
         this.mCache = cache;
         return this;
     }
@@ -432,7 +438,7 @@ public final class EasyHttp {
     /**
      * 添加全局公共请求参数
      */
-    public EasyHttp addCommonParams(HttpParams commonParams) {
+    public SuperHttpManager addCommonParams(HttpParams commonParams) {
         if (mCommonParams == null) mCommonParams = new HttpParams();
         mCommonParams.put(commonParams);
         return this;
@@ -455,7 +461,7 @@ public final class EasyHttp {
     /**
      * 添加全局公共请求参数
      */
-    public EasyHttp addCommonHeaders(HttpHeaders commonHeaders) {
+    public SuperHttpManager addCommonHeaders(HttpHeaders commonHeaders) {
         if (mCommonHeaders == null) mCommonHeaders = new HttpHeaders();
         mCommonHeaders.put(commonHeaders);
         return this;
@@ -464,7 +470,7 @@ public final class EasyHttp {
     /**
      * 添加全局拦截器
      */
-    public EasyHttp addInterceptor(Interceptor interceptor) {
+    public SuperHttpManager addInterceptor(Interceptor interceptor) {
         okHttpClientBuilder.addInterceptor(Utils.checkNotNull(interceptor, "interceptor == null"));
         return this;
     }
@@ -472,7 +478,7 @@ public final class EasyHttp {
     /**
      * 添加全局网络拦截器
      */
-    public EasyHttp addNetworkInterceptor(Interceptor interceptor) {
+    public SuperHttpManager addNetworkInterceptor(Interceptor interceptor) {
         okHttpClientBuilder.addNetworkInterceptor(Utils.checkNotNull(interceptor, "interceptor == null"));
         return this;
     }
@@ -480,7 +486,7 @@ public final class EasyHttp {
     /**
      * 全局设置代理
      */
-    public EasyHttp setOkproxy(Proxy proxy) {
+    public SuperHttpManager setOkproxy(Proxy proxy) {
         okHttpClientBuilder.proxy(Utils.checkNotNull(proxy, "proxy == null"));
         return this;
     }
@@ -488,7 +494,7 @@ public final class EasyHttp {
     /**
      * 全局设置请求的连接池
      */
-    public EasyHttp setOkconnectionPool(ConnectionPool connectionPool) {
+    public SuperHttpManager setOkconnectionPool(ConnectionPool connectionPool) {
         okHttpClientBuilder.connectionPool(Utils.checkNotNull(connectionPool, "connectionPool == null"));
         return this;
     }
@@ -496,7 +502,7 @@ public final class EasyHttp {
     /**
      * 全局为Retrofit设置自定义的OkHttpClient
      */
-    public EasyHttp setOkclient(OkHttpClient client) {
+    public SuperHttpManager setOkclient(OkHttpClient client) {
         retrofitBuilder.client(Utils.checkNotNull(client, "client == null"));
         return this;
     }
@@ -504,7 +510,7 @@ public final class EasyHttp {
     /**
      * 全局设置Converter.Factory,默认GsonConverterFactory.create()
      */
-    public EasyHttp addConverterFactory(Converter.Factory factory) {
+    public SuperHttpManager addConverterFactory(Converter.Factory factory) {
         retrofitBuilder.addConverterFactory(Utils.checkNotNull(factory, "factory == null"));
         return this;
     }
@@ -512,7 +518,7 @@ public final class EasyHttp {
     /**
      * 全局设置CallAdapter.Factory,默认RxJavaCallAdapterFactory.create()
      */
-    public EasyHttp addCallAdapterFactory(CallAdapter.Factory factory) {
+    public SuperHttpManager addCallAdapterFactory(CallAdapter.Factory factory) {
         retrofitBuilder.addCallAdapterFactory(Utils.checkNotNull(factory, "factory == null"));
         return this;
     }
@@ -520,7 +526,7 @@ public final class EasyHttp {
     /**
      * 全局设置Retrofit callbackExecutor
      */
-    public EasyHttp setCallbackExecutor(Executor executor) {
+    public SuperHttpManager setCallbackExecutor(Executor executor) {
         retrofitBuilder.callbackExecutor(Utils.checkNotNull(executor, "executor == null"));
         return this;
     }
@@ -528,7 +534,7 @@ public final class EasyHttp {
     /**
      * 全局设置Retrofit对象Factory
      */
-    public EasyHttp setCallFactory(okhttp3.Call.Factory factory) {
+    public SuperHttpManager setCallFactory(okhttp3.Call.Factory factory) {
         retrofitBuilder.callFactory(Utils.checkNotNull(factory, "factory == null"));
         return this;
     }
@@ -536,7 +542,7 @@ public final class EasyHttp {
     /**
      * 全局设置baseurl
      */
-    public EasyHttp setBaseUrl(String baseUrl) {
+    public SuperHttpManager setBaseUrl(String baseUrl) {
         mBaseUrl = Utils.checkNotNull(baseUrl, "baseUrl == null");
         return this;
     }
@@ -567,7 +573,6 @@ public final class EasyHttp {
      * delete请求
      */
     public static DeleteRequest delete(String url) {
-
         return new DeleteRequest(url);
     }
 

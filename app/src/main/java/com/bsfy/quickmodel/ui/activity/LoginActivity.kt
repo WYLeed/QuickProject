@@ -7,7 +7,6 @@ import android.view.View
 import com.bsfy.quickmodel.R
 import com.bsfy.quickmodel.vm.LoginModel
 import com.bsfy.superutilsmodel.util.weight.StatusBarUtil.setPaddingSmart
-import com.bsfy.superwebviewmodel.WebViewActivity
 import com.bsfy.superweightmodel.baseview.BaseBackBarActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -40,7 +39,9 @@ class LoginActivity : BaseBackBarActivity() {
     override fun onWidgetClick(view: View) {
         val viewId = view.id
         if (viewId == tv_login.id) {
-            WebViewActivity.startActivity(this)
+            var account=tv_account.text.toString().trim()
+            var password=tv_password.text.toString().trim()
+            mModel?.login(account,password)
         } else {
 
         }
