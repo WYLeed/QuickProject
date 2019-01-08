@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import java.lang.ref.WeakReference;
 /**
  * <p>描述：可以直接更新UI的回调</p>
  * @author by bsfy
- * 日期： 2017/5/9 14:36 <br>
+ * 日期： 2018/5/9 14:36 <br>
  * 版本： v1.0<br>
  */
 public abstract class UIProgressResponseCallBack implements ProgressResponseCallBack {

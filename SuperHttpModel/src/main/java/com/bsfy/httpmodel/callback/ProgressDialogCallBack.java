@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import io.reactivex.disposables.Disposable;
  * 1.可以自定义带有加载进度框的回调,是否需要显示，是否可以取消<br>
  * 2.取消对话框会自动取消掉网络请求<br>
  * @author by bsfy
- * 日期： 2017/4/24 15:35 <br>
+ * 日期： 2018/4/24 15:35 <br>
  * 版本： v1.0<br>
  */
 public abstract class ProgressDialogCallBack<T> extends CallBack<T> implements ProgressCancelListener {

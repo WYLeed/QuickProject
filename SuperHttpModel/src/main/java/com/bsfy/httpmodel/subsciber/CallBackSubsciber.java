@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import io.reactivex.annotations.NonNull;
  * <p>描述：带有callBack的回调</p>
  * 主要作用是不需要用户订阅，只要实现callback回调<br>
  * @author by bsfy
- * 日期： 2016/12/28 17:10<br>
+ * 日期： 2018/12/28 17:10<br>
  * 版本： v2.0<br>
  */
 public class CallBackSubsciber<T> extends BaseSubscriber<T> {

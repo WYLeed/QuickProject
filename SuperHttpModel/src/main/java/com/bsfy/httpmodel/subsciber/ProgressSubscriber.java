@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,10 +30,10 @@ import com.bsfy.httpmodel.exception.ApiException;
  * 2.支持对话框取消时可以自动终止本次请求，取消订阅。<br>
  * <p>
  * @author by bsfy
- * 日期： 2016/12/19 16:46<br>
+ * 日期： 2018/12/19 16:46<br>
  * <p>
  * 修改者：zhouyou<br>
- * 日期： 2017/04/19 15:56<br>
+ * 日期： 2018/04/19 15:56<br>
  * 修改内容：支持自定义对话框<br>
  * 版本： v2.0<br>
  */

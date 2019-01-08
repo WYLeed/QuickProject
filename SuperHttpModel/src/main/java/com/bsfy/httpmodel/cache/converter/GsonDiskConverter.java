@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,6 +17,7 @@
 package com.bsfy.httpmodel.cache.converter;
 
 
+import com.bsfy.httpmodel.utils.HttpLog;
 import com.bsfy.httpmodel.utils.Utils;
 import com.google.gson.Gson;
 import com.google.gson.JsonIOException;
@@ -24,13 +25,13 @@ import com.google.gson.JsonSyntaxException;
 import com.google.gson.TypeAdapter;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.lang.reflect.Type;
 import java.util.ConcurrentModificationException;
-import com.bsfy.httpmodel.utils.HttpLog;
 
 
 /**
@@ -53,7 +54,7 @@ import com.bsfy.httpmodel.utils.HttpLog;
  * 《--看到这里，顺便提下知道IDiskConverter的好处了吧，面向接口编程是不是很灵活(*^_^*)----------》<br>
  * <p>
  * @author by bsfy
- * 日期： 2016/12/24 17:35<br>
+ * 日期： 2018/12/24 17:35<br>
  * 版本： v2.0<br>
  */
 @SuppressWarnings(value={"unchecked", "deprecation"})

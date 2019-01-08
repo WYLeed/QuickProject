@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ import okio.Okio;
  * <p>描述：post数据进行gzip后发送给服务器</p>
  *  okhttp内部默认启用了gzip,此选项是针对需要对post数据进行gzip后发送给服务器的,如服务器不支持,请勿开启<br>
  * @author by bsfy
- * 日期： 2016/12/19 17:11<br>
+ * 日期： 2018/12/19 17:11<br>
  * 版本： v2.0<br>
  */
 public class GzipRequestInterceptor implements Interceptor {

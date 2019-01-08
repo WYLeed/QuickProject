@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import java.lang.reflect.Type;
 /**
  * <p>描述：获取类型接口</p>
  * @author by bsfy
- * 日期： 2017/5/31 14:46 <br>
+ * 日期： 2018/5/31 14:46 <br>
  * 版本： v1.0<br>
  */
 public interface IType<T> {

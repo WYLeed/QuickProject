@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,7 +47,7 @@ import static com.bsfy.httpmodel.utils.HttpUtil.UTF8;
  * 3.参数值是经过UTF-8编码的<br>
  * 4.默认提供询问是否动态签名（签名需要自定义），动态添加时间戳等<br>
  * @author by bsfy
- * 日期： 2017/5/3 15:32 <br>
+ * 日期： 2018/5/3 15:32 <br>
  * 版本： v1.0<br>
  */
 @SuppressWarnings(value={"unchecked", "deprecation"})

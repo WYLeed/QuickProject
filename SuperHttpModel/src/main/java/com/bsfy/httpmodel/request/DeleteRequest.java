@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,7 @@ import okhttp3.ResponseBody;
 /**
  * <p>描述：删除请求</p>
  * @author by bsfy
- * 日期： 2017/4/28 15:02 <br>
+ * 日期： 2018/4/28 15:02 <br>
  * 版本： v1.0<br>
  */
 @SuppressWarnings(value = {"unchecked", "deprecation"})

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -37,7 +37,7 @@ import io.reactivex.functions.Consumer;
 /**
  * <p>描述：定义一个下载的订阅者</p>
  * @author by bsfy
- * 日期： 2016/12/19 16:35<br>
+ * 日期： 2018/12/19 16:35<br>
  * 版本： v2.0<br>
  */
 public class DownloadSubscriber<ResponseBody extends okhttp3.ResponseBody> extends BaseSubscriber<ResponseBody> {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,7 +39,7 @@ import retrofit2.http.Body;
 /**
  * <p>描述：body请求的基类</p>
  * @author by bsfy
- * 日期： 2017/5/22 17:13 <br>
+ * 日期： 2018/5/22 17:13 <br>
  * 版本： v1.0<br>
  */
 @SuppressWarnings(value={"unchecked", "deprecation"})

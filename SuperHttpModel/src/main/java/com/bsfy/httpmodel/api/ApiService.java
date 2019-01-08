@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,7 +54,7 @@ import retrofit2.http.Url;
  * 2.注意事项： map不能为null,否则该请求不会执行,但可以size为空.<br>
  * </p>
  * @author by bsfy
- * 日期： 2016/12/19 16:35<br>
+ * 日期： 2018/12/19 16:35<br>
  * 版本： v2.0<br>
  */
 public interface ApiService {

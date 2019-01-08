@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ import com.bsfy.httpmodel.utils.HttpLog;
  * 1.具有上传进度回调通知功能<br>
  * 2.防止频繁回调，上层无用的刷新<br>
  * @author by bsfy
- * 日期： 2016/12/23 16:38 <br>
+ * 日期： 2018/12/23 16:38 <br>
  * 版本： v1.0<br>
  */
 public class UploadProgressRequestBody extends RequestBody {

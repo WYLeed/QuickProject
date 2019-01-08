@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ package com.bsfy.httpmodel.callback;
 /**
  * <p>描述：下载进度回调（主线程，可以直接操作UI）</p>
  * @author by bsfy
- * 日期： 2017/4/28 16:28 <br>
+ * 日期： 2018/4/28 16:28 <br>
  * 版本： v1.0<br>
  */
 public abstract class DownloadProgressCallBack<T> extends CallBack<T> {

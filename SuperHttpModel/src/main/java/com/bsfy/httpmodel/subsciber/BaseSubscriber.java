@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ import static com.bsfy.httpmodel.utils.Utils.isNetworkAvailable;
  * 2.在onStart()没有网络时直接onCompleted();<br>
  * 3.统一处理了异常<br>
  * @author by bsfy
- * 日期： 2016/12/20 10:35<br>
+ * 日期： 2018/12/20 10:35<br>
  * 版本： v2.0<br>
  */
 public abstract class BaseSubscriber<T> extends DisposableObserver<T> {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import java.lang.reflect.Type;
  * 《看到能很方便的实现一大波功能，是不是很刺激啊(*>﹏<*)》<br>
  * <p>
  * 作者：zhouyou<br>
- * 日期： 2016/12/24 17:35<br>
+ * 日期： 2018/12/24 17:35<br>
  * 版本： v2.0<br>
  */
 public interface IDiskConverter {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ import io.reactivex.Observable;
  * <p>描述：先显示缓存，缓存不存在，再请求网络</p>
  * <-------此类加载用的是反射 所以类名是灰色的 没有直接引用  不要误删----------------><br>
  * @author by bsfy
- * 日期： 2016/12/24 10:35<br>
+ * 日期： 2018/12/24 10:35<br>
  * 版本： v2.0<br>
  */
 final public class FirstCacheStategy extends BaseStrategy {

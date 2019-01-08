@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * 3.子类直接考虑具体的实现细节就可以了。<br>
  * <p>
  * @author by bsfy
- * 日期： 2016/01/07 12:35<br>
+ * 日期： 2018/01/07 12:35<br>
  * 版本： v2.0<br>
  */
 public abstract class BaseCache {

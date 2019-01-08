@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -75,7 +75,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
  * 10.支持Retrofit相关参数</br>
  * 11.支持Cookie管理</br>
  * @author by bsfy
- * 日期： 2017/4/25 15:25 <br>
+ * 日期： 2018/4/25 15:25 <br>
  * 版本： v1.0<br>
  */
 public final class EasyHttp {

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import java.lang.reflect.Type;
  * <p>描述：内存缓存</p>
  * 内存缓存针对缓存的时间不好处理，暂时没有写内存缓存，等后面有思路了，再加上该部分。<br>
  * @author by bsfy
- * 日期： 2017/1/7 15:22<br>
+ * 日期： 2018/1/7 15:22<br>
  * 版本： v2.0<br>
  */
 

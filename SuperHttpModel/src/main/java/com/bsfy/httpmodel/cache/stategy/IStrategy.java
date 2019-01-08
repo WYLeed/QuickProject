@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ import io.reactivex.Observable;
 /**
  * <p>描述：实现缓存策略的接口，可以自定义缓存实现方式，只要实现该接口就可以了</p>
  * @author by bsfy
- * 日期： 2016/12/24 10:35<br>
+ * 日期： 2018/12/24 10:35<br>
  * 版本： v2.0<br>
  */
 public interface IStrategy {

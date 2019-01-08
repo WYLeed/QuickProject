@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 zhouyou(478319399@qq.com)
+ * Copyright (C) 2018 zhouyou(478319399@qq.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ import io.reactivex.functions.Function;
 /**
  * <p>描述：网络请求错误重试条件</p>
  * @author by bsfy
- * 日期： 2017/4/12 17:52 <br>
+ * 日期： 2018/4/12 17:52 <br>
  * 版本： v1.0<br>
  */
 public class RetryExceptionFunc implements Function<Observable<? extends Throwable>, Observable<?>> {
