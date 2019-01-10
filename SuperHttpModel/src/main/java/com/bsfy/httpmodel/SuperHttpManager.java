@@ -80,7 +80,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
  */
 public final class SuperHttpManager {
 
-    public static final String BASE_URL = "https://api.github.com/v3/";
+    public static final String BASE_URL = "https://api.github.com/";
 
 
     private static Application sContext;

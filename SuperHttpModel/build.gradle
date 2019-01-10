@@ -13,9 +13,13 @@ dependencies {
     api dep.disklrucache
     api dep.rxjava
     api dep.rxandroid
-    api dep.adapter_rxjava
+    api dep.retrofit2_adapter_rxjava
     api dep.retrofit2
     api dep.retrofit2_gson
+    api dep.retrofit2_scalars
+    api dep.retrofit2_simplexml
+
+
     implementation project(':SuperUtilsModel')
 
 

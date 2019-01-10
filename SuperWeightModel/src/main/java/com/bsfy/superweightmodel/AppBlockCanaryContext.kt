@@ -7,7 +7,7 @@ import com.github.moduth.blockcanary.BlockCanaryContext
 import com.github.moduth.blockcanary.BuildConfig
 
 /**
- * 作者: Created by wangyu on 2019/1/8.
+ * 作者: Created by bsfy on 2019/1/8.
  * 卡顿监测器
  */
 

@@ -1,7 +1,7 @@
 package com.bsfy.quickmodel.manager;
 
 /**
- * 作者: Created by wangyu on 2019/1/8.
+ * 作者: Created by bsfy on 2019/1/8.
  */
 
 public class FileManager {

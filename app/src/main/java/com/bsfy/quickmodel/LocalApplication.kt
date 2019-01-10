@@ -6,17 +6,24 @@ import com.bsfy.httpmodel.cache.converter.SerializableDiskConverter
 import com.bsfy.httpmodel.model.HttpHeaders
 import com.bsfy.httpmodel.model.HttpParams
 import com.bsfy.httpmodel.utils.HttpLog
-import com.bsfy.quickmodel.manager.interceptor.CustomSignInterceptor
+import com.bsfy.quickmodel.manager.HttpManager
+import com.bsfy.quickmodel.manager.interceptor.PageInfoInterceptor
+import com.bsfy.quickmodel.utils.XPreference
 import com.bsfy.superweightmodel.BaseApp
+import okhttp3.Interceptor
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
 import javax.net.ssl.HostnameVerifier
 import javax.net.ssl.SSLSession
 
 /**
- * 作者: Created by wangyu on 2019/1/2.
+ * 作者: Created by bsfy on 2019/1/2.
  */
 
 class LocalApplication : BaseApp() {
 
+    private var accessTokenStorage: String by XPreference(HttpManager.ACCESS_TOKEN, "af6d31e3774930e3ceb0c83e696e58bb7848276f")
 
     override fun attachBaseContext(base: Context) {
         super.attachBaseContext(base)
@@ -31,6 +38,10 @@ class LocalApplication : BaseApp() {
 
     private fun initHttp() {
         val headers = HttpHeaders()
+
+        headers.put("Accept", "application/json")
+        headers.put("Content-Type", "application/json; charset=UTF-8")
+
         val params = HttpParams()
         SuperHttpManager.getInstance()
                 .debug("SuperHttpManager", true)
@@ -44,11 +55,18 @@ class LocalApplication : BaseApp() {
                 .setCacheDiskConverter(SerializableDiskConverter())   //默认缓存使用序列化转化
                 .setCacheMaxSize(100 * 1024 * 1024)                   //设置缓存大小为50M
                 .setCacheVersion(1)                                   //缓存版本为1
-                .setHostnameVerifier(UnSafeHostnameVerifier(SuperHttpManager.BASE_URL))//全局访问规则
-                .setCertificates()                                    //信任所有证书
+//                .setHostnameVerifier(UnSafeHostnameVerifier(SuperHttpManager.BASE_URL))//全局访问规则
+//                .setCertificates()                                    //信任所有证书
+
                 .addCommonHeaders(headers)                            //设置全局公共头
                 .addCommonParams(params)                              //设置全局公共参数
-                .addInterceptor(CustomSignInterceptor())              //添加参数签名拦截器
+
+                .addInterceptor(headerInterceptor())
+                .addInterceptor(PageInfoInterceptor())
+                .addConverterFactory(ScalarsConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+
         //.addInterceptor(new HeTInterceptor());//处理自己业务的拦截器
     }
 
@@ -61,5 +79,27 @@ class LocalApplication : BaseApp() {
             HttpLog.i("verify " + hostname + " " + this.host)
             return !(this.host == null || "" == this.host || !this.host.contains(hostname))
         }
+    }
+
+    /**
+     * 拦截头部增加token
+     */
+    private fun headerInterceptor(): Interceptor {
+        return Interceptor { chain ->
+            var request = chain.request()
+
+            //add access token
+            val accessToken = accessTokenStorage
+            if (!accessToken.isEmpty()) {
+                val url = request.url().toString()
+                request = request.newBuilder()
+                        .addHeader("Authorization", accessToken)
+                        .url(url)
+                        .build()
+            }
+
+            chain.proceed(request)
+        }
+
     }
 }

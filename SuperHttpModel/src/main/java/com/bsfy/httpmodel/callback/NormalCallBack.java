@@ -23,7 +23,7 @@ package com.bsfy.httpmodel.callback;
  * 日期： 2018/12/29 10:06<br>
  * 版本： v2.0<br>
  */
-public abstract class SimpleCallBack<T> extends CallBack<T> {
+public abstract class NormalCallBack<T> extends CallBack<T> {
 
     @Override
     public void onStart() {

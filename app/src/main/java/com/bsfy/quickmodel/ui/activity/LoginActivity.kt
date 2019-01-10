@@ -39,9 +39,9 @@ class LoginActivity : BaseBackBarActivity() {
     override fun onWidgetClick(view: View) {
         val viewId = view.id
         if (viewId == tv_login.id) {
-            var account=tv_account.text.toString().trim()
-            var password=tv_password.text.toString().trim()
-            mModel?.login(account,password)
+            val account = tv_account.text.toString().trim()
+            val password = tv_password.text.toString().trim()
+            mModel?.login(account, password)
         } else {
 
         }

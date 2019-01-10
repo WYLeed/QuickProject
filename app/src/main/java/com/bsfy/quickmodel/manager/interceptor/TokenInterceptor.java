@@ -3,7 +3,7 @@ package com.bsfy.quickmodel.manager.interceptor;
 import android.text.TextUtils;
 
 import com.bsfy.httpmodel.SuperHttpManager;
-import com.bsfy.httpmodel.callback.SimpleCallBack;
+import com.bsfy.httpmodel.callback.NormalCallBack;
 import com.bsfy.httpmodel.exception.ApiException;
 import com.bsfy.httpmodel.interceptor.BaseExpiredInterceptor;
 import com.bsfy.httpmodel.model.ApiResult;
@@ -107,7 +107,7 @@ public class TokenInterceptor extends BaseExpiredInterceptor {
                 .accessToken(false)
                 .timeStamp(true)
                 .syncRequest(true)//同步请求
-                .execute(new SimpleCallBack<AuthModel>() {
+                .execute(new NormalCallBack<AuthModel>() {
                     @Override
                     public void onError(ApiException e) {
                         notifyLoginExit(e.getMessage());
@@ -285,7 +285,7 @@ public class TokenInterceptor extends BaseExpiredInterceptor {
                 .sign(true)
                 .timeStamp(true)
                 .syncRequest(true)
-                .execute(new SimpleCallBack<AuthModel>() {
+                .execute(new NormalCallBack<AuthModel>() {
                     @Override
                     public void onError(ApiException e) {
                         //如果刷新都失败了,那只能通知上层退出登陆了

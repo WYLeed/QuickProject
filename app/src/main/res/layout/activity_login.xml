@@ -5,8 +5,10 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:overScrollMode="never"
     android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:overScrollMode="never"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <LinearLayout
@@ -50,9 +52,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/login_hint_account"
+                android:text="1547773156@qq.com"
                 android:textCursorDrawable="@drawable/bg_edit_normal"
                 android:textSize="@dimen/font_30"
-                android:text="1547773156@qq.com"
                 app:met_baseColor="@android:color/white"
                 app:met_floatingLabel="highlight"
                 app:met_maxCharacters="20"
@@ -72,9 +74,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/login_hint_password"
+                android:text="bsfy2018"
                 android:textCursorDrawable="@drawable/bg_edit_normal"
                 android:textSize="@dimen/font_30"
-                android:text="bsfy2018"
                 app:met_baseColor="@android:color/white"
                 app:met_floatingLabel="highlight"
                 app:met_maxCharacters="20"
