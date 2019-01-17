@@ -17,6 +17,7 @@ class HomeActivity : BaseActivity() {
     }
 
     override fun doBusiness() {
+
     }
 
     override fun onWidgetClick(view: View) {

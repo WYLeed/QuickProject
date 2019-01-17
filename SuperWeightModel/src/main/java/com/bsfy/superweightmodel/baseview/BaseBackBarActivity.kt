@@ -36,6 +36,7 @@ abstract class BaseBackBarActivity : BaseActivity() {
         if (item.itemId == android.R.id.home) {
             finish()
         }
+
         return super.onOptionsItemSelected(item)
     }
 

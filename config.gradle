@@ -150,11 +150,13 @@ ext {
             //                     https://github.com/nispok/snackbar
             material_snackbar               : 'com.nispok:snackbar:2.11.+',
 
-
             rxpermissions                   : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar',
 
+            rxbinding                       : 'com.jakewharton.rxbinding2:rxbinding:2.0.0',
 
-            rxbinding                       : 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+            agentweb                        : 'com.just.agentweb:agentweb:4.0.2', // (必选)
+            agentweb_download               : 'com.just.agentweb:download:4.0.2', // (可选)
+            agentweb_filechooser            : 'com.just.agentweb:filechooser:4.0.2'// (可选)
 
             //备用
 //            compile 'com.jaeger.statusbarutil:library:1.5.1'
