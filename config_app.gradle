@@ -31,6 +31,11 @@ android {
         javaCompileOptions {
             // 显式声明支持注解
             annotationProcessorOptions { includeCompileClasspath true }
+
+
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
         }
 
 
@@ -69,6 +74,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 
 }
 

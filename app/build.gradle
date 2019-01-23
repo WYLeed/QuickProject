@@ -34,10 +34,8 @@ dependencies {
     implementation project(':SuperHttpModel')
 
 
-    //webView
-    api dep.agentweb
-    api dep.agentweb_download
-    api dep.agentweb_filechooser
-
-
+// android 路由表
+// https://blog.csdn.net/jj583500596/article/details/81362695
+    compile 'com.alibaba:arouter-api:1.4.0'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.2.1'
 }

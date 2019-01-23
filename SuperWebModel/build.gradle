@@ -16,4 +16,11 @@ dependencies {
     implementation project(':SuperGlideModel')
     implementation project(':SuperWeightModel')
     implementation project(':SuperUtilsModel')
+
+    //webView
+    api dep.agentweb
+    api dep.agentweb_download
+    api dep.agentweb_filechooser
+
+
 }

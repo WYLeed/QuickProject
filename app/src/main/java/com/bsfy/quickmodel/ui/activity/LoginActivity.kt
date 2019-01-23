@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders
 import android.os.Bundle
 import android.view.View
 import com.bsfy.quickmodel.R
+import com.bsfy.quickmodel.StringUtils
 import com.bsfy.quickmodel.vm.LoginModel
 import com.bsfy.superutilsmodel.util.weight.StatusBarUtil.setPaddingSmart
 import com.bsfy.superweightmodel.baseview.BaseBackBarActivity
@@ -31,6 +32,7 @@ class LoginActivity : BaseBackBarActivity() {
         iv_image.loadCircle(imageUrl, R.mipmap.image_loading)
         tv_login.setOnClickListener(this)
 
+        tv_login.text=StringUtils.decode("sss")
     }
 
     override fun doBusiness() {

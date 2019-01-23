@@ -172,4 +172,13 @@ ext {
 //    https://github.com/YukiMatsumura/ImageryHeader
 //    Snack
 //    https://github.com/nispok/snackbar
+
+//    notifition
+//    https://github.com/katzer/cordova-plugin-local-notifications
+
+
+//    字体库
+//    http://note.youdao.com/noteshare?id=57f467adba69bf39d8c3a81da08a9865
+//    https://ecomfe.github.io/fontmin/#banner
+
 }
