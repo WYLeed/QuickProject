@@ -25,6 +25,7 @@ import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -45,11 +46,11 @@ import com.bsfy.superpluginmodel.utils.DLConstants;
 
 /**
  * note: can use that like this.
- * 
+ *
  * @see {@link }
  * @author renyugang
  */
-public class DLBasePluginActivity extends Activity implements DLPlugin {
+public class DLBasePluginActivity extends AppCompatActivity implements DLPlugin {
 
     private static final String TAG = "DLBasePluginActivity";
 
@@ -287,6 +288,7 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
         }
     }
 
+    @Override
     public void onNewIntent(Intent intent) {
         if (mFrom == DLConstants.FROM_INTERNAL) {
             super.onNewIntent(intent);
@@ -335,18 +337,21 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
         return false;
     }
 
+    @Override
     public void onWindowAttributesChanged(WindowManager.LayoutParams params) {
         if (mFrom == DLConstants.FROM_INTERNAL) {
             super.onWindowAttributesChanged(params);
         }
     }
 
+    @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         if (mFrom == DLConstants.FROM_INTERNAL) {
             super.onWindowFocusChanged(hasFocus);
         }
     }
 
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         if (mFrom == DLConstants.FROM_INTERNAL) {
             return super.onCreateOptionsMenu(menu);
@@ -354,6 +359,7 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
         return true;
     }
 
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (mFrom == DLConstants.FROM_INTERNAL) {
             return onOptionsItemSelected(item);
@@ -375,7 +381,7 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
         }
         return mPluginManager.startPluginActivityForResult(that, dlIntent, requestCode);
     }
-    
+
     public int startPluginService(DLIntent dlIntent) {
         if (mFrom == DLConstants.FROM_EXTERNAL) {
             if (dlIntent.getPluginPackage() == null) {
@@ -392,7 +398,7 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
         }
         return mPluginManager.stopPluginService(that, dlIntent);
     }
-    
+
     public int bindPluginService(DLIntent dlIntent, ServiceConnection conn, int flags) {
         if (mFrom == DLConstants.FROM_EXTERNAL) {
             if (dlIntent.getPluginPackage() == null) {
@@ -401,11 +407,12 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
         }
         return mPluginManager.bindPluginService(that, dlIntent, conn, flags);
     }
-    
+
     public int unBindPluginService(DLIntent dlIntent, ServiceConnection conn) {
         if (mFrom == DLConstants.FROM_EXTERNAL) {
-            if (dlIntent.getPluginPackage() == null)
-            dlIntent.setPluginPackage(mPluginPackage.packageName);
+            if (dlIntent.getPluginPackage() == null) {
+                dlIntent.setPluginPackage(mPluginPackage.packageName);
+            }
         }
         return mPluginManager.unBindPluginService(that, dlIntent, conn);
     }
@@ -413,8 +420,8 @@ public class DLBasePluginActivity extends Activity implements DLPlugin {
 //    /**
 //     * 直接调用that.startService
 //     * that 可能有两种情况
-//     * 1.指向this 
-//     * 2.指向DLProxyActivity 
+//     * 1.指向this
+//     * 2.指向DLProxyActivity
 //     */
 //    public ComponentName startService(Intent service) {
 //        return that.startService(service);

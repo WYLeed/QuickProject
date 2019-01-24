@@ -2,25 +2,20 @@ package com.bsfy.realproject
 
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.view.View
 import com.bsfy.realproject.entity.common.NormalImageEntity
 import com.bsfy.realproject.ui.adapter.main.HomeAdapter
-import com.bsfy.superweightmodel.baseview.BaseActivity
+import com.bsfy.superpluginmodel.dynamicload.DLBasePluginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-
-class MainActivity : BaseActivity() {
-
-
-    override fun initData(bundle: Bundle?) {
-
+class MainActivity2 : DLBasePluginActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        initView()
     }
 
-    override fun bindLayout(): Int {
-        return R.layout.activity_main
-    }
 
-    override fun initView(savedInstanceState: Bundle?, contentView: View) {
+    private fun initView() {
         val list: MutableList<NormalImageEntity> = ArrayList()
         list.add(NormalImageEntity("sss"))
         list.add(NormalImageEntity("sss"))
@@ -34,15 +29,5 @@ class MainActivity : BaseActivity() {
         list.add(NormalImageEntity("sss"))
         rv.layoutManager = LinearLayoutManager(this)
         rv.adapter = HomeAdapter(list, R.layout.adapter_main)
-
-
-    }
-
-    override fun doBusiness() {
-
-    }
-
-    override fun onWidgetClick(view: View) {
-
     }
 }
