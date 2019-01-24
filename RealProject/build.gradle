@@ -1,0 +1,32 @@
+apply {
+    from "${rootDir.path}/config_app.gradle"
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api dep.rxpermissions
+
+    api dep.support.appcompat_v7
+    api dep.support.appcompat_v4
+    api dep.support.appcompat_percent
+
+    implementation project(':SuperPluginModel')
+    implementation project(':BaseWeightModel')
+    implementation project(':SuperWeightModel')
+    implementation project(':SuperUtilsModel')
+    implementation project(':SuperGlideModel')
+    implementation project(':SuperWebModel')
+
+    //    api dep.lifecycle_runtime
+    //    api dep.lifecycle_extensions
+    //    annotationProcessor dep.lifecycle_compiler
+    api dep.lifecycle_extensions
+    api dep.lifecycle_viewmodel
+    api dep.lifecycle_livedata
+    api dep.lifecycle_runtime
+    api dep.lifecycle_compiler
+    api dep.lifecycle_common
+    api dep.lifecycle_reactivestreams
+    implementation project(':BaseWeightModel')
+
+}

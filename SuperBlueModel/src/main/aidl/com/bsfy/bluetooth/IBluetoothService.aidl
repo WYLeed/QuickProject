@@ -3,7 +3,7 @@ package com.bsfy.bluetooth;
 
 // Declare any non-default types here with import statements
 
-import com.inuker.bluetooth.library.IResponse;
+import com.bsfy.bluetooth.IResponse;
 
 interface IBluetoothService {
     void callBluetoothApi(int code, inout Bundle args, IResponse response);
