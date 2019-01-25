@@ -31,6 +31,7 @@ abstract class BaseBackActivity : BaseActivity() {
 
         BarUtils.setStatusBarColor(this, ContextCompat.getColor(Utils.getApp(), R.color.colorPrimary), 0)
         BarUtils.addMarginTopEqualStatusBarHeight(backRootLayout)
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

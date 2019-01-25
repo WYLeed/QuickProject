@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BaseWeightModel/BaseWeightModel.iml" filepath="$PROJECT_DIR$/BaseWeightModel/BaseWeightModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NBSGAYSASS/NBSGAYSASS.iml" filepath="$PROJECT_DIR$/NBSGAYSASS/NBSGAYSASS.iml" />
       <module fileurl="file://$PROJECT_DIR$/RealProject/RealProject.iml" filepath="$PROJECT_DIR$/RealProject/RealProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SuperBlueModel/SuperBlueModel.iml" filepath="$PROJECT_DIR$/SuperBlueModel/SuperBlueModel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SuperGlideModel/SuperGlideModel.iml" filepath="$PROJECT_DIR$/SuperGlideModel/SuperGlideModel.iml" />
