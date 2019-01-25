@@ -1,9 +1,12 @@
-package com.bsfy.quickmodel
+package com.bsfy.quickmodel.ui.activity
 
 import android.os.Bundle
 import android.os.Environment
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
+import com.bsfy.quickmodel.PermissionsUtils
+import com.bsfy.quickmodel.PluginItem
+import com.bsfy.quickmodel.R
 import com.bsfy.quickmodel.ui.adapter.PluginsAdapter
 import com.bsfy.superpluginmodel.dynamicload.internal.DLPluginManager
 import com.bsfy.superpluginmodel.utils.DLUtils
@@ -40,11 +43,9 @@ class ShellActivity : AppCompatActivity() {
                 DLPluginManager.getInstance(this).loadApk(item.pluginPath)
             }
         }
-
         val pluginsAdapter = PluginsAdapter(list, R.layout.adapter_plugins)
         rv.layoutManager = LinearLayoutManager(this)
         rv.adapter = pluginsAdapter
-
     }
 
 

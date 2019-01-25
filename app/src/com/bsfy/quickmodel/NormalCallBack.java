@@ -9,6 +9,8 @@ public interface NormalCallBack<T> {
 
     /**
      * 数据回调接口
+     *
+     * @param t
      */
-    void onCallBcak(T t);
+    void onCallBack(T t);
 }

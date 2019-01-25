@@ -39,7 +39,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ShellActivity"
+            android:name=".ui.activity.ShellActivity"
             android:label="插件化app"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateVisible|adjustResize">

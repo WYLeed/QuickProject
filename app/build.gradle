@@ -7,12 +7,11 @@ dependencies {
     api dep.rxpermissions
     api dep.support.appcompat_v7
     api dep.support.appcompat_v4
-    api dep.support.appcompat_percent
-
     implementation project(':SuperPluginModel')
     implementation project(':BaseWeightModel')
     implementation project(':SuperWeightModel')
     implementation project(':SuperUtilsModel')
-    implementation project(':SuperGlideModel')
-    implementation project(':SuperWebModel')
+
+    compile "com.facebook.react:react-native:0.20.1"
+
 }

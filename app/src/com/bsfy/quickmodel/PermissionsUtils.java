@@ -15,6 +15,12 @@ import io.reactivex.functions.Consumer;
 
 public class PermissionsUtils {
 
+    /**
+     * 本地插件包权限申请
+     *
+     * @param activity
+     * @param callBack
+     */
     public static void verifyStoragePermissions(Activity activity, NormalCallBack<Boolean> callBack) {
         RxPermissions rxPermissions = new RxPermissions(activity);
         rxPermissions.request(
@@ -25,7 +31,7 @@ public class PermissionsUtils {
                 if (aBoolean) {
                     Toast.makeText(activity, "同意权限", Toast.LENGTH_SHORT).show();
                     if (callBack != null) {
-                        callBack.onCallBcak(true);
+                        callBack.onCallBack(true);
                     }
                 } else {
                     Toast.makeText(activity, "拒绝权限", Toast.LENGTH_SHORT).show();
