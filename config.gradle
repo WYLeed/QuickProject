@@ -176,10 +176,23 @@ ext {
 //    notifition
 //    https://github.com/katzer/cordova-plugin-local-notifications
 
-
 //    字体库
 //    http://note.youdao.com/noteshare?id=57f467adba69bf39d8c3a81da08a9865
 //    https://ecomfe.github.io/fontmin/#banner
+
+    //进程管理库
+    //https://github.com/limpoxe/Android-ServiceManager
+    //implementation 'com.limpoxe.support:android-servicemanager:1.0.5@aar'
+
+    //动态加载框架
+    //https://www.cnblogs.com/xiaomoxian/p/5234788.html
+
+
+    //android 源码查看器
+    //https://github.com/android/platform_frameworks_base
+
+
+
 
 
 //    implementation fileTree(dir: 'libs', include: ['*.jar'])
