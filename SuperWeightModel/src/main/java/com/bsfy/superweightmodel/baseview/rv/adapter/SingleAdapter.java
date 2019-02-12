@@ -11,6 +11,8 @@ import java.util.List;
  *     time  : 2017/08/22
  *     desc  :
  * </pre>
+ *
+ * @author Administrator
  */
 public abstract class SingleAdapter<M> extends BaseAdapter<M> {
 

@@ -60,7 +60,8 @@ public class ApiResultFunc<T> implements Function<ResponseBody, ApiResult<T>> {
     public ApiResult<T> apply(@NonNull ResponseBody responseBody) throws Exception {
         ApiResult<T> apiResult = new ApiResult<>();
         apiResult.setCode(-1);
-        if (type instanceof ParameterizedType) {//自定义ApiResult
+        //自定义ApiResult
+        if (type instanceof ParameterizedType) {
             final Class<T> cls = (Class) ((ParameterizedType) type).getRawType();
             if (ApiResult.class.isAssignableFrom(cls)) {
                 final Type[] params = ((ParameterizedType) type).getActualTypeArguments();

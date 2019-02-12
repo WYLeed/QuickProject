@@ -60,6 +60,13 @@ public class GetRequest extends BaseRequest<GetRequest> {
         });
     }
 
+
+    /**
+     * 使用方式
+     * @param proxy
+     * @param <T>
+     * @return
+     */
     public <T> Observable<T> execute(CallClazzProxy<? extends ApiResult<T>, T> proxy) {
         return build().generateRequest()
                 .map(new ApiResultFunc(proxy.getType()))

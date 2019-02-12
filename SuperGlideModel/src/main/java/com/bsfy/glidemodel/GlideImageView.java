@@ -5,8 +5,8 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 
 import com.bsfy.glidemodel.progress.OnProgressListener;
 import com.bsfy.glidemodel.transformation.CircleTransformation;
@@ -19,7 +19,7 @@ import com.bumptech.glide.request.RequestOptions;
  * @author sunfusheng on 2017/11/10.
  */
 @SuppressLint("CheckResult")
-public class GlideImageView extends ImageView {
+public class GlideImageView extends AppCompatImageView {
 
     private boolean enableState = false;
     private float pressedAlpha = 0.4f;

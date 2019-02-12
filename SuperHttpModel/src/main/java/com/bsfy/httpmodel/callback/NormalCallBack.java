@@ -16,17 +16,26 @@
 
 package com.bsfy.httpmodel.callback;
 
+import com.bsfy.httpmodel.exception.ApiException;
+
 /**
  * <p>描述：简单的回调,默认可以使用该回调，不用关注其他回调方法</p>
  * 使用该回调默认只需要处理onError，onSuccess两个方法既成功失败<br>
+ *
  * @author by bsfy
- * 日期： 2018/12/29 10:06<br>
- * 版本： v2.0<br>
+ *         日期： 2018/12/29 10:06<br>
+ *         版本： v2.0<br>
  */
 public abstract class NormalCallBack<T> extends CallBack<T> {
 
     @Override
+    public void onError(ApiException e) {
+
+    }
+
+    @Override
     public void onStart() {
+
     }
 
     @Override

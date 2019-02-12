@@ -32,12 +32,12 @@ import java.net.UnknownHostException;
 
 import retrofit2.HttpException;
 
-
 /**
  * <p>描述：统一处理了API异常错误</p>
+ *
  * @author by bsfy
- * 日期： 2018/12/15 16:50 <br>
- * 版本： v1.0<br>
+ *         日期： 2018/12/15 16:50 <br>
+ *         版本： v1.0<br>
  */
 @SuppressWarnings("deprecation")
 public class ApiException extends Exception {
@@ -81,12 +81,10 @@ public class ApiException extends Exception {
     }
 
     public static boolean isOk(ApiResult apiResult) {
-        if (apiResult == null)
+        if (apiResult == null) {
             return false;
-        if (apiResult.isOk() /*|| ignoreSomeIssue(apiResult.getCode())*/)
-            return true;
-        else
-            return false;
+        }
+        return apiResult.isOk();
     }
 
     public static ApiException handleException(Throwable e) {
@@ -94,20 +92,6 @@ public class ApiException extends Exception {
         if (e instanceof HttpException) {
             HttpException httpException = (HttpException) e;
             ex = new ApiException(httpException, httpException.code());
-            /*switch (httpException.code()) {
-                case BADREQUEST:
-                case UNAUTHORIZED:
-                case FORBIDDEN:
-                case NOT_FOUND:
-                case REQUEST_TIMEOUT:
-                case GATEWAY_TIMEOUT:
-                case INTERNAL_SERVER_ERROR:
-                case BAD_GATEWAY:
-                case SERVICE_UNAVAILABLE:
-                default:
-                    ex.message = "网络错误,Code:"+httpException.code()+" ,err:"+httpException.getMessage();
-                    break;
-            }*/
             ex.message = httpException.getMessage();
             return ex;
         } else if (e instanceof ServerException) {
@@ -164,10 +148,6 @@ public class ApiException extends Exception {
         return message;
     }
 
-    /*public String getErrMessage() {
-        return message;
-    }*/
-
     /**
      * 约定异常
      */
@@ -220,5 +200,7 @@ public class ApiException extends Exception {
          * 空指针错误
          */
         public static final int NULLPOINTER_EXCEPTION = UNKNOWNHOST_ERROR + 1;
+
+
     }
 }

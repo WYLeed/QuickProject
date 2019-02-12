@@ -10,6 +10,9 @@ import com.bsfy.superutilsmodel.util.AntiShakeUtils
 import com.bsfy.superutilsmodel.util.LogUtils
 import com.bsfy.superutilsmodel.util.PermissionUtils
 import com.bsfy.superweightmodel.helper.DialogHelper
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.disposables.Disposable
+
 
 /**
  * ```
@@ -19,16 +22,19 @@ import com.bsfy.superweightmodel.helper.DialogHelper
  * desc  : base about activity
  * ```
  */
- abstract class BaseActivity : AppCompatActivity(), IBaseView {
+abstract class BaseActivity : AppCompatActivity(), IBaseView {
 
     private lateinit var mContentView: View
     private lateinit var mActivity: Activity
+
+    var mCompositeDisposable: CompositeDisposable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         mActivity = this
         super.onCreate(savedInstanceState)
         getRequestPermissions()
         initData(intent.extras)
+        mCompositeDisposable = CompositeDisposable()
         setRootLayout(bindLayout())
         initView(savedInstanceState, mContentView)
         doBusiness()
@@ -64,5 +70,29 @@ import com.bsfy.superweightmodel.helper.DialogHelper
         }
     }
 
+
+    /**
+     * 添加订阅
+     */
+    fun addDisposable(mDisposable: Disposable) {
+        if (mCompositeDisposable == null) {
+            mCompositeDisposable = CompositeDisposable()
+        }
+        mCompositeDisposable!!.add(mDisposable)
+    }
+
+    /**
+     * 取消所有订阅
+     */
+    private fun clearDisposable() {
+        if (mCompositeDisposable != null) {
+            mCompositeDisposable!!.clear()
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        clearDisposable()
+    }
 
 }

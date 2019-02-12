@@ -85,7 +85,7 @@ import com.squareup.leakcanary.LeakCanary
         }
     }
 
-    protected fun isDebug(): Boolean {
+    private fun isDebug(): Boolean {
         if (isDebug == null) isDebug = AppUtils.isAppDebug()
         return isDebug!!
     }

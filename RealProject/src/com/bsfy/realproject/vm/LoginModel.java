@@ -57,8 +57,6 @@ public class LoginModel extends BaseModel {
         SuperHttpManager.post(HttpManager.ACCOUNT_INFO_USER)
                 .headers(httpHeaders)
                 .execute(new NormalCallBack<Response<AccountUser>>() {
-
-
                     @Override
                     public void onSuccess(Response<AccountUser> authModelResponse) {
                         ToastUtils.showShort("登录成功！");

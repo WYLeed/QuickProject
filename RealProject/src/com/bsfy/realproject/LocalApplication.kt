@@ -40,26 +40,25 @@ class LocalApplication : BaseApp() {
 
         headers.put("Accept", "application/json")
         headers.put("Content-Type", "application/json; charset=UTF-8")
+        headers.put("platform", "saas-android")
 
         val params = HttpParams()
+
+
         SuperHttpManager.getInstance()
                 .debug("SuperHttpManager", true)
                 .setReadTimeOut(15 * 1000)
                 .setWriteTimeOut(15 * 1000)
                 .setConnectTimeout(15 * 1000)
-                .setRetryCount(3)                                     //默认网络不好自动重试3次
+                .setRetryCount(2)                                     //默认网络不好自动重试3次
                 .setRetryDelay(500)                                   //每次延时500ms重试
                 .setRetryIncreaseDelay(500)                           //每次延时叠加500ms
                 .setBaseUrl(SuperHttpManager.BASE_URL)
                 .setCacheDiskConverter(SerializableDiskConverter())   //默认缓存使用序列化转化
                 .setCacheMaxSize(100 * 1024 * 1024)                   //设置缓存大小为50M
                 .setCacheVersion(1)                                   //缓存版本为1
-//                .setHostnameVerifier(UnSafeHostnameVerifier(SuperHttpManager.BASE_URL))//全局访问规则
-//                .setCertificates()                                    //信任所有证书
-
                 .addCommonHeaders(headers)                            //设置全局公共头
-                .addCommonParams(params)                              //设置全局公共参数
-
+                .addCommonParams(params)                              //设置全局公参数
                 .addInterceptor(headerInterceptor())
                 .addInterceptor(PageInfoInterceptor())
                 .addConverterFactory(ScalarsConverterFactory.create())

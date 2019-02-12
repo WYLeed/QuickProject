@@ -108,7 +108,7 @@ public abstract class BaseRequest<R extends BaseRequest> {
         this.url = url;
         context = SuperHttpManager.getContext();
         SuperHttpManager config = SuperHttpManager.getInstance();
-        this.baseUrl = config.getBaseUrl();
+        this.baseUrl = SuperHttpManager.getBaseUrl();
         if (!TextUtils.isEmpty(this.baseUrl)){
             httpUrl = HttpUrl.parse(baseUrl);
         }
@@ -116,23 +116,30 @@ public abstract class BaseRequest<R extends BaseRequest> {
             httpUrl = HttpUrl.parse(url);
             baseUrl =httpUrl.url().getProtocol()+"://" +httpUrl.url().getHost()+"/";
         }
-        cacheMode = config.getCacheMode();                                //添加缓存模式
-        cacheTime = config.getCacheTime();                                //缓存时间
-        retryCount = config.getRetryCount();                              //超时重试次数
-        retryDelay = config.getRetryDelay();                              //超时重试延时
-        retryIncreaseDelay = config.getRetryIncreaseDelay();              //超时重试叠加延时
+        cacheMode = SuperHttpManager.getCacheMode();                                //添加缓存模式
+        cacheTime = SuperHttpManager.getCacheTime();                                //缓存时间
+        retryCount = SuperHttpManager.getRetryCount();                              //超时重试次数
+        retryDelay = SuperHttpManager.getRetryDelay();                              //超时重试延时
+        retryIncreaseDelay = SuperHttpManager.getRetryIncreaseDelay();              //超时重试叠加延时
         //Okhttp  cache
-        cache = config.getHttpCache();
+        cache = SuperHttpManager.getHttpCache();
         //默认添加 Accept-Language
         String acceptLanguage = HttpHeaders.getAcceptLanguage();
-        if (!TextUtils.isEmpty(acceptLanguage))
+        if (!TextUtils.isEmpty(acceptLanguage)) {
             headers(HttpHeaders.HEAD_KEY_ACCEPT_LANGUAGE, acceptLanguage);
+        }
         //默认添加 User-Agent
         String userAgent = HttpHeaders.getUserAgent();
-        if (!TextUtils.isEmpty(userAgent)) headers(HttpHeaders.HEAD_KEY_USER_AGENT, userAgent);
+        if (!TextUtils.isEmpty(userAgent)) {
+            headers(HttpHeaders.HEAD_KEY_USER_AGENT, userAgent);
+        }
         //添加公共请求参数
-        if (config.getCommonParams() != null) params.put(config.getCommonParams());
-        if (config.getCommonHeaders() != null) headers.put(config.getCommonHeaders());
+        if (config.getCommonParams() != null) {
+            params.put(config.getCommonParams());
+        }
+        if (config.getCommonHeaders() != null) {
+            headers.put(config.getCommonHeaders());
+        }
     }
 
     public HttpParams getParams() {
@@ -392,17 +399,27 @@ public abstract class BaseRequest<R extends BaseRequest> {
             return builder;
         } else {
             final OkHttpClient.Builder newClientBuilder = SuperHttpManager.getOkHttpClient().newBuilder();
-            if (readTimeOut > 0)
+            if (readTimeOut > 0) {
                 newClientBuilder.readTimeout(readTimeOut, TimeUnit.MILLISECONDS);
-            if (writeTimeOut > 0)
+            }
+            if (writeTimeOut > 0) {
                 newClientBuilder.writeTimeout(writeTimeOut, TimeUnit.MILLISECONDS);
-            if (connectTimeout > 0)
+            }
+            if (connectTimeout > 0) {
                 newClientBuilder.connectTimeout(connectTimeout, TimeUnit.MILLISECONDS);
-            if (hostnameVerifier != null) newClientBuilder.hostnameVerifier(hostnameVerifier);
-            if (sslParams != null)
+            }
+            if (hostnameVerifier != null) {
+                newClientBuilder.hostnameVerifier(hostnameVerifier);
+            }
+            if (sslParams != null) {
                 newClientBuilder.sslSocketFactory(sslParams.sSLSocketFactory, sslParams.trustManager);
-            if (proxy != null) newClientBuilder.proxy(proxy);
-            if (cookies.size() > 0) SuperHttpManager.getCookieJar().addCookies(cookies);
+            }
+            if (proxy != null) {
+                newClientBuilder.proxy(proxy);
+            }
+            if (cookies.size() > 0) {
+                SuperHttpManager.getCookieJar().addCookies(cookies);
+            }
 
             //添加头  头添加放在最前面方便其他拦截器可能会用到
             newClientBuilder.addInterceptor(new HeadersInterceptor(headers));
@@ -439,7 +456,9 @@ public abstract class BaseRequest<R extends BaseRequest> {
             return builder;
         } else {
             final Retrofit.Builder retrofitBuilder = new Retrofit.Builder();
-            if (!TextUtils.isEmpty(baseUrl)) retrofitBuilder.baseUrl(baseUrl);
+            if (!TextUtils.isEmpty(baseUrl)) {
+                retrofitBuilder.baseUrl(baseUrl);
+            }
             if (!converterFactories.isEmpty()) {
                 for (Converter.Factory converterFactory : converterFactories) {
                     retrofitBuilder.addConverterFactory(converterFactory);

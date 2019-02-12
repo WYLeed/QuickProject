@@ -80,7 +80,6 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
  */
 public final class SuperHttpManager {
 
-    public static final String BASE_URL = "https://api.github.com/";
 
 
     private static Application sContext;
@@ -115,9 +114,11 @@ public final class SuperHttpManager {
         okHttpClientBuilder.readTimeout(DEFAULT_MILLISECONDS, TimeUnit.MILLISECONDS);
         okHttpClientBuilder.writeTimeout(DEFAULT_MILLISECONDS, TimeUnit.MILLISECONDS);
         retrofitBuilder = new Retrofit.Builder();
-        retrofitBuilder.addCallAdapterFactory(RxJava2CallAdapterFactory.create());//增加RxJava2CallAdapterFactory
+        //增加RxJava2CallAdapterFactory
+        retrofitBuilder.addCallAdapterFactory(RxJava2CallAdapterFactory.create());
+        //目前只支持Serializable和Gson缓存其它可以自己扩展
         rxCacheBuilder = new RxCache.Builder().init(sContext)
-                .diskConverter(new SerializableDiskConverter());      //目前只支持Serializable和Gson缓存其它可以自己扩展
+                .diskConverter(new SerializableDiskConverter());
     }
 
     public static SuperHttpManager getInstance() {
@@ -148,8 +149,9 @@ public final class SuperHttpManager {
     }
 
     private static void testInitialize() {
-        if (sContext == null)
+        if (sContext == null) {
             throw new ExceptionInInitializerError("请先在全局Application中调用 EasyHttp.init() 初始化！");
+        }
     }
 
     public static OkHttpClient getOkHttpClient() {
@@ -295,7 +297,9 @@ public final class SuperHttpManager {
      * 超时重试次数
      */
     public SuperHttpManager setRetryCount(int retryCount) {
-        if (retryCount < 0) throw new IllegalArgumentException("retryCount must > 0");
+        if (retryCount < 0) {
+            throw new IllegalArgumentException("retryCount must > 0");
+        }
         mRetryCount = retryCount;
         return this;
     }
@@ -311,7 +315,9 @@ public final class SuperHttpManager {
      * 超时重试延迟时间
      */
     public SuperHttpManager setRetryDelay(int retryDelay) {
-        if (retryDelay < 0) throw new IllegalArgumentException("retryDelay must > 0");
+        if (retryDelay < 0) {
+            throw new IllegalArgumentException("retryDelay must > 0");
+        }
         mRetryDelay = retryDelay;
         return this;
     }
@@ -327,8 +333,9 @@ public final class SuperHttpManager {
      * 超时重试延迟叠加时间
      */
     public SuperHttpManager setRetryIncreaseDelay(int retryIncreaseDelay) {
-        if (retryIncreaseDelay < 0)
+        if (retryIncreaseDelay < 0) {
             throw new IllegalArgumentException("retryIncreaseDelay must > 0");
+        }
         mRetryIncreaseDelay = retryIncreaseDelay;
         return this;
     }
@@ -359,7 +366,9 @@ public final class SuperHttpManager {
      * 全局的缓存过期时间
      */
     public SuperHttpManager setCacheTime(long cacheTime) {
-        if (cacheTime <= -1) cacheTime = DEFAULT_CACHE_NEVER_EXPIRE;
+        if (cacheTime <= -1) {
+            cacheTime = DEFAULT_CACHE_NEVER_EXPIRE;
+        }
         mCacheTime = cacheTime;
         return this;
     }
@@ -390,8 +399,9 @@ public final class SuperHttpManager {
      * 全局设置缓存的版本，默认为1，缓存的版本号
      */
     public SuperHttpManager setCacheVersion(int cacheersion) {
-        if (cacheersion < 0)
+        if (cacheersion < 0) {
             throw new IllegalArgumentException("cacheersion must > 0");
+        }
         rxCacheBuilder.appVersion(cacheersion);
         return this;
     }
@@ -439,7 +449,9 @@ public final class SuperHttpManager {
      * 添加全局公共请求参数
      */
     public SuperHttpManager addCommonParams(HttpParams commonParams) {
-        if (mCommonParams == null) mCommonParams = new HttpParams();
+        if (mCommonParams == null) {
+            mCommonParams = new HttpParams();
+        }
         mCommonParams.put(commonParams);
         return this;
     }
@@ -462,7 +474,9 @@ public final class SuperHttpManager {
      * 添加全局公共请求参数
      */
     public SuperHttpManager addCommonHeaders(HttpHeaders commonHeaders) {
-        if (mCommonHeaders == null) mCommonHeaders = new HttpHeaders();
+        if (mCommonHeaders == null) {
+            mCommonHeaders = new HttpHeaders();
+        }
         mCommonHeaders.put(commonHeaders);
         return this;
     }
