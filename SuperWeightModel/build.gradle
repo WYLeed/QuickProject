@@ -50,6 +50,13 @@ dependencies {
     api dep.rxbinding
     api dep.rxpermissions
 
+    api dep.fragmentation
+    api dep.fragmentation_swipeback
+    api dep.fragmentation_eventbus_activity_scope
+    api dep.eventbus
+
+    api dep.nice_sppinear
+
 //    api dep.room
 //    annotationProcessor dep.room_compiler
 

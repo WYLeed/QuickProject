@@ -4,7 +4,6 @@ package com.bsfy.superweightmodel.feature.activity
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
 import android.view.View
 import android.view.Window
 import com.bsfy.superweightmodel.R
@@ -50,8 +49,8 @@ class SubActivityActivity : BaseBackActivity() {
         super.onDestroy()
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        ActivityCompat.finishAfterTransition(this)
-    }
+//    override fun onBackPressed() {
+//        super.onBackPressed()
+//        ActivityCompat.finishAfterTransition(this)
+//    }
 }

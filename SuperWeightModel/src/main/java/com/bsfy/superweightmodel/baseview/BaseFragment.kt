@@ -4,11 +4,11 @@ import android.app.Activity
 import android.content.Context
 import android.os.Bundle
 import android.support.annotation.IdRes
-import android.support.v4.app.Fragment
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import me.yokeyword.fragmentation.SupportFragment
 
 /**
  * ```
@@ -18,7 +18,7 @@ import android.view.ViewGroup
  * desc  : base about v4-fragment
  * ```
  */
-abstract class BaseFragment : Fragment(), IBaseView {
+abstract class BaseFragment : SupportFragment(), IBaseView {
 
     companion object {
         private const val TAG = "BaseFragment"

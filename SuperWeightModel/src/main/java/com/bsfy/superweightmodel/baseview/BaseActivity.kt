@@ -2,7 +2,6 @@ package com.bsfy.superweightmodel.baseview
 
 import android.app.Activity
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import com.bsfy.superutilsmodel.constant.PermissionConstants
@@ -12,6 +11,7 @@ import com.bsfy.superutilsmodel.util.PermissionUtils
 import com.bsfy.superweightmodel.helper.DialogHelper
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
+import me.yokeyword.fragmentation.SupportActivity
 
 
 /**
@@ -22,7 +22,7 @@ import io.reactivex.disposables.Disposable
  * desc  : base about activity
  * ```
  */
-abstract class BaseActivity : AppCompatActivity(), IBaseView {
+abstract class BaseActivity : SupportActivity(), IBaseView {
 
     private lateinit var mContentView: View
     private lateinit var mActivity: Activity
